@@ -30,15 +30,15 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand col-lg-3" href="#">
-              <img src="./public/assets/logo.png" alt="logo" width="200px">
+            <a class="navbar-brand col-lg-3 mt-5" href="#">
+              <img src="./public/assets/logo.png" alt="logo" width="250px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
   
             <div class="collapse navbar-collapse text-white col-lg-7 d-flex" id="navbarSupportedContent">
-              <div class=" nav-search col-lg-10 nav-colors">
+              <div class=" nav-search col-lg-12 nav-colors">
                 <div class="nav-search-input nav-colors">
                   <div >
                     <input class="search-input" type="text" placeholder="Que cherchez vous ?" aria-label="Search">
@@ -46,58 +46,63 @@
                   </div>
                 </div>
   
-                <div class="d-flex justify-content-between" style=" gap: 20px;;">
+                <div class="d-flex justify-content-between" style=" gap: 20px; color: turquoise;">
                   <a href="{{route('customer.login')}}">
-                    <i class="bi bi-person nav-colors text-size"></i>
+                    <i class="bi bi-person text-size"></i>
                   </a>
-                  <a href=""><i class="bi bi-heart nav-colors light text-size"></i></a>
-                  <a href=""><i class="bi bi-bag-plus nav-colors text-size"></i></a>
+                  <a href=""><i class="bi bi-heart light text-size"></i></a>
+                  <a href=""><i class="bi bi-bag-plus text-size"></i></a>
   
                 </div>
               </div>
               <ul class="navbar-nav mb-lg-3 col-lg-10 mb-lg-1">
-                <li class="nav-item p-1 d-flex" style="position: relative; width: 150px;">
-                  <span class="custom-btn-bar-1 nav-colors">
+                <li class="nav-item d-flex" style="position: relative; width: 135px;">
+                  <span class="custom-btn-bar-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="9.504" height="25.402" viewBox="0 0 9.504 25.402">
-                      <line id="Ligne_2" data-name="Ligne 2" y1="22.904" x2="7.007" transform="translate(1.249 1.249)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                      <line id="Ligne_2" data-name="Ligne 2" y1="22.904" x2="7.007" transform="translate(1.249 1.249)"
+                        fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                     </svg>
   
                   </span>
                   <div class="custom-btn">
-                    <a class="nav-link active text-white text-color" aria-current="page" href="#">VENTES FLASH</a>
+                    <a class="nav-link active text-white text-color" style=" font-size: 12px;
+                    font-weight:300;" aria-current="page" href="#">VENTES FLASH</a>
                   </div>
                   <span class="custom-btn-bar-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="9.504" height="25.402" viewBox="0 0 9.504 25.402">
-                      <line id="Ligne_1" data-name="Ligne 1" y1="22.904" x2="7.007" transform="translate(1.249 1.249)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                      <line id="Ligne_1" data-name="Ligne 1" y1="22.904" x2="7.007" transform="translate(1.249 1.249)"
+                        fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                     </svg>
                   </span>
   
                   <span class="custom-btn-tic">
                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.721" viewBox="0 0 23.147 20.721">
                       <g id="Groupe_2" data-name="Groupe 2" transform="translate(-522.586 -69.763)">
-                        <path id="Tracé_98" data-name="Tracé 98" d="M522.586,90.484l6.933-20.721,7.637,5.121Z" fill="#fff" />
-                        <path id="Tracé_99" data-name="Tracé 99" d="M544.544,95.821l9.864-11.244,4.2,6.641Z" transform="translate(-12.878 -8.688)" fill="#fff" />
+                        <path id="Tracé_98" data-name="Tracé 98" d="M522.586,90.484l6.933-20.721,7.637,5.121Z"
+                          fill="#000" />
+                        <path id="Tracé_99" data-name="Tracé 99" d="M544.544,95.821l9.864-11.244,4.2,6.641Z"
+                          transform="translate(-12.878 -8.688)" fill="#000" />
                       </g>
                     </svg>
   
                   </span>
                 </li>
-                <li class="nav-item p-1 dropdown">
-                  <a class="nav-link dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    APPLE
+                <li class="nav-item dropdown">
+                  <a class="nav-link active  dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    APPLE <i class="fa-solid fa-angle-down dropdown-arrow"></i>
                   </a>
-                  <ul class="dropdown-menu nav-colors" aria-labelledby="navbarDropdown">
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item fw-lighter fs-6" href="#">Iphone 11s</a></li>
                     <li><a class="dropdown-item fw-lighter fs-6" href="#">Iphone 12s pro</a></li>
                     <li>
-                                      <hr class="dropdown-divider">
-                                    </li> 
+                      <hr class="dropdown-divider">
+                    </li>
                     <li><a class="dropdown-item fw-lighter fs-6" href="#">Iphone 12s </a></li>
                   </ul>
                 </li>
-                <li class="nav-item p-1 dropdown nav-colors">
-                  <a class="nav-link dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    SAMSUNG
+                <li class="nav-item dropdown nav-colors">
+                  <a class="nav-link active dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SAMSUNG<i class="fa-solid fa-angle-down dropdown-arrow"></i>
                   </a>
                   <ul class="dropdown-menu nav-colors" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Samsung A02</a></li>
@@ -108,9 +113,9 @@
                     <li><a class="dropdown-item nav-colors" href="#">Samsung M52</a></li>
                   </ul>
                 </li>
-                <li class="nav-item p-1 dropdown nav-colors">
-                  <a class="nav-link dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    AUTRES MARQUES
+                <li class="nav-item dropdown nav-colors">
+                  <a class="nav-link active dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    AUTRES MARQUES<i class="fa-solid fa-angle-down dropdown-arrow"></i>
                   </a>
                   <ul class="dropdown-menu nav-colors" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Infinix </a></li>
@@ -121,7 +126,7 @@
                     <li><a class="dropdown-item nav-colors" href="#">Huawei</a></li>
                   </ul>
                 </li>
-                <li class="nav-item p-1 me-3">
+                <li class="nav-item  me-3">
                   <a class="nav-link active nav-colors" aria-current="page" href="#">ACCESSOIRES</a>
                 </li>
   
