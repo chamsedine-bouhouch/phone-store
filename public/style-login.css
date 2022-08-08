@@ -686,8 +686,8 @@ input[type="radio"]:hover {
         text-align: left;
         font-family: 'Lato';
         font-style: normal;
-        font-weight: 1000 !important;
-        font-size: 10px;
+        font-weight: 600 !important;
+        font-size: 14px;
         color: rgba(75, 151, 179, 1);
         margin: 0;
         padding: 0;
@@ -700,8 +700,8 @@ input[type="radio"]:hover {
         text-align: left;
         font-family: 'Lato';
         font-style: normal;
-        font-weight: 900 !important;
-        font-size: 9px;
+        font-weight: 800 !important;
+        font-size: 10px;
         color: rgb(0, 0, 0);
         margin: 0;
         padding: 0;
