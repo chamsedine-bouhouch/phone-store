@@ -637,6 +637,11 @@ font-size: medium;
 .text-size{
     font-size: 25px;
 }
+.text-size2{
+    font-family: "Lato";
+    font-weight: 200;
+    font-size: 25px;
+}
 .accessoire-image-1 img {
     width: 380px;
     height: 380px;

@@ -86,7 +86,7 @@ body {
 .navbar-button {
     background-color: #4B97B3;
     color: rgba(79, 161, 182, 1);
-    padding: 10px 20px 10px 20px;
+    padding: 12px 22px;
     border: 1px solid rgb(27, 96, 223);
     border-radius: 25px;
     display: block;
@@ -109,7 +109,7 @@ font-size: 10px;
 .nav-search {
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px 0 40px;
+    padding: 10px 9% 0 40px;
     margin: 5px 0 20px 0;
 }
 
@@ -612,7 +612,8 @@ input[type="radio"]:hover {
 }
 .nav-colors{
     color: black;
-    font-weight: 900;
+    font-weight: 600;
+    font-size: 12px;
   }
 .navbar-button.nav-colors{
     color: white;
@@ -646,7 +647,7 @@ input[type="radio"]:hover {
     #title-card {
         
        
-        margin-top: 70px;
+        margin-top: 7%;
         text-align: left;
         font-family: 'lato' ;
         margin-left: 5px;
