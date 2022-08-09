@@ -21,7 +21,15 @@ ul.breadcrumb {
     background-color: #f5f6f8;
     margin-bottom: 0;
   }
-
+.button-side{
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+.button-side :first-child:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
   .carousel-indicators{
     bottom: -10%;
     
