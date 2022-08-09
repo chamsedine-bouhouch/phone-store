@@ -49,8 +49,8 @@ body {
     width: 130px;
     background-color: black;
     border-radius: 8px;
-    -webkit-clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
-    clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
+    /* -webkit-clip-path: polygon(9% 0%, 100% 0%, 91% 80%, 0% 80%); */
+    clip-path: polygon(9% 0%, 100% 0%, 91% 80%, 0% 80%);
 }
 
 .slide-items {

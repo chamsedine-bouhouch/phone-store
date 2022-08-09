@@ -121,6 +121,12 @@ font-size: medium;
 font-weight: 500;
 margin-right: 0.5rem;
 }
+.text-muted2{
+    font-family: lato;
+    font-size: medium;
+    font-weight: 800;
+    margin-right: 0.5rem;
+}
 .slider5 .item {
     margin-left: auto;
 }
@@ -141,7 +147,7 @@ margin-right: 0.5rem;
     height: 50em;
 }
 .owl-carousel.avis .owl-item img {
-    width: 25%;
+    width: 40%;
 }
 .no-js .owl-carousel,
 .owl-carousel.owl-loaded {
@@ -153,6 +159,7 @@ margin-right: 0.5rem;
 }
 .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
+  
     left: -2%;
 }
 .owl-carousel .owl-nav button.owl-prev .fa,
@@ -167,7 +174,7 @@ margin-right: 0.5rem;
 
 .owl-theme .owl-nav {
     position: absolute;
-    top: 30%;
+    top: 40%;
     width: 100%;
 }
 header {
@@ -216,8 +223,8 @@ header {
     width: 130px;
     background-color: black;
     border-radius: 8px;
-    -webkit-clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
-    clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
+     /* -webkit-clip-path: polygon(9% 0%, 100% 0%, 91% 80%, 0% 80%); */
+     clip-path: polygon(9% 0%, 100% 0%, 91% 80%, 0% 80%);
 }
 .slide-items {
     display: flex;
