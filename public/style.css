@@ -21,7 +21,18 @@ ul.breadcrumb {
     background-color: #f5f6f8;
     margin-bottom: 0;
   }
-  
+
+  .carousel-indicators{
+    bottom: -10%;
+    
+  }
+  .switcher{
+    padding:0;
+    height: 10px;
+    width: 10px;
+    border-radius: 20px;
+    background-color:#2793e6;
+  }
   /* Display list items side by side */
   ul.breadcrumb li {
     display: inline;
@@ -294,7 +305,8 @@ header {
     background-color: black;
     border-radius: 8px;
      /* -webkit-clip-path: polygon(9% 0%, 100% 0%, 91% 80%, 0% 80%); */
-     clip-path: polygon(9% 0%, 100% 0%, 91% 80%, 0% 80%);
+     clip-path: polygon(9% 0%, 100% 0%, 94% 90%, 0% 90%);
+
 }
 .slide-items {
     display: flex;
@@ -311,7 +323,7 @@ header {
 }
 .custom-btn-bar-2 {
     position: absolute;
-    right: 0;
+    right: 5%;
     bottom: 5px;
 }
 .shape-bg {
@@ -675,9 +687,11 @@ height: 48%;
     position: fixed;
    display:none;
    z-index: 30;
+   
 }
 .appear{
     display:inherit;  
+    
 }
 .zindexneg{
     z-index: -30;
