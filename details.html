@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    type="text/css" media="all" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./public/owlCarousel/owlCarousel2-3-4.css" />
+  <link rel="stylesheet" href="./public/owlCarousel/assets.css'" />
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./public/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./public/silde1.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./public/slide-2.css" />
+  <link rel="stylesheet" href="./public/slide-3.css" />
+  <link rel="stylesheet" href="./public/slide4.css" />
+  <link rel="stylesheet" href="./public/style-login.css" type="text/css" media="all" />
+  <title>Detail</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+
+    .detail {
+      width: 100%;
+      height: fit-content;
+      margin-top: 3em;
+    }
+
+    .detail>img {
+      width: 3%;
+      left: 50%;
+      position: relative;
+    }
+
+    .detail>h1 {
+      text-align: center;
+      font-size: 40px;
+    }
+    .content-page-info{
+      padding-right: 0;
+    }
+    select{
+      -webkit-appearance: none;
+    }
+    select.detail_info {
+      border: 1px solid;
+      border-radius: 37px;
+      padding: 10px 15px;
+      margin-top: 2em;
+      width: 100%;
+      background-image: url("public/assets/caret-down-fill.svg");
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+    }
+    .desc-text{
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .iphone_detail {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2em;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info1 {
+      flex: 4;
+      box-shadow: 1px 1px 4px;
+      margin: 12px;
+      border-radius: 17px;
+      overflow: hidden;
+    }
+
+    .info1>h3 {
+      background-color: #3C66AC;
+      text-align: center;
+      padding: 10px;
+      font-size: 24px;
+      font-weight: 400;
+      color: white;
+    }
+    .detail_checkup>h1{
+      background-color: #3C66AC;
+      text-align: center;
+      padding: 10px;
+      font-size: 24px;
+      font-weight: 400;
+      color: white;
+      margin-bottom: 0;
+    }
+    .info_detail {
+      padding: 0.5em 2em 0.5em 1em;
+    }
+    .info_detail2{
+      padding: 0.5em 1em 0.5em 1em;
+    }
+    .info_detail3{
+      justify-content: start;
+    display: flex;
+    flex-direction: column;
+    }
+    .detail_checkup {
+      box-shadow: 1px 1px 4px;
+      margin: 2rem 0.5rem;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .detail_item {
+      display: flex;
+      grid-template-columns: repeat(2, 30%);
+     
+      font-weight: bold;
+    }
+
+    .detail_item>p:first-child,
+    .cColor {
+      flex:4;
+      color: #3C66AC;
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .descrep {
+      flex:6;
+      color: #000000;
+      font-weight: bold;
+      text-align: left;
+    }
+    a.cColor {
+      text-decoration: underline;
+      color: #3C66AC;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    button[class="cColor"] {
+      width: fit-content;
+      background-color: transparent;
+      margin-right: 25%;
+      margin-bottom: 0.5rem;
+      padding: 0.25rem;
+      border-radius: 20px;
+      border: 1px solid;
+    }
+    .bouton{
+      width: 50%;
+      background-color: transparent;
+      color: #3C66AC;
+      margin-bottom: 1rem;
+      margin-left: 25%;
+      padding: 0.5rem;
+      border-radius: 20px;
+      border: 1px solid #3C66AC;
+
+    }
+    .bouton2{
+      width:100%;
+      background-color: #4B97B3;
+      color: white;
+      
+      
+      padding: 1rem 1rem;
+      border-radius: 5rem;
+      border: 1px solid #3C66AC;
+    }
+    .detail_checkup>h5 {
+      text-align: center;
+      background: #f3f0f0;
+      padding: 5px;
+      font-size:medium;
+      font-weight: 600;
+    }
+
+    .checkup_info {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+    }
+
+    @media (max-width:915px) {
+      .checkup_info {
+        display: block;
+      }
+
+      .info1 {
+        width: 96%;
+      }
+    }
+
+    @media (max-width:550px) {
+      .detail_item {
+        grid-template-columns: repeat(2, 50%);
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="page-container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand col-lg-3 mt-5" href="#">
+            <img src="./public/assets/logo.png" alt="logo" width="250px" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-white col-lg-7 d-flex" id="navbarSupportedContent">
+            <div class="nav-search col-lg-12 nav-colors">
+              <div class="nav-search-input nav-colors">
+                <div>
+                  <input class="search-input" type="text" placeholder="Que cherchez vous ?" aria-label="Search" />
+                  <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between" style="gap: 10px; color: rgba(64, 93, 224, 0.212)">
+                <a href="{{route('customer.login')}}">
+                  <i class="bi bi-person text-size2"></i>
+                </a>
+                <a href=""><i class="bi bi-heart light text-size2"></i></a>
+                <a href=""><i class="bi bi-bag-plus text-size2"></i></a>
+              </div>
+            </div>
+            <ul class="navbar-nav mb-lg-3 col-lg-10 mb-lg-1">
+              <li class="nav-item d-flex" style="position: relative; width: 135px">
+                <span class="custom-btn-bar-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9.504" height="25.402" viewBox="0 0 9.504 25.402">
+                    <line id="Ligne_2" data-name="Ligne 2" y1="22.904" x2="7.007" transform="translate(1.249 1.249)"
+                      fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                  </svg>
+                </span>
+                <div class="custom-btn">
+                  <a class="nav-link active text-white nav-colors" style="font-size: 12px; font-weight: 300"
+                    aria-current="page" href="#">VENTES FLASH</a>
+                </div>
+                <span class="custom-btn-bar-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9.504" height="25.402" viewBox="0 0 9.504 25.402">
+                    <line id="Ligne_1" data-name="Ligne 1" y1="22.904" x2="7.007" transform="translate(1.249 1.249)"
+                      fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                  </svg>
+                </span>
+
+                <span class="custom-btn-tic">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20.721" viewBox="0 0 23.147 20.721">
+                    <g id="Groupe_2" data-name="Groupe 2" transform="translate(-522.586 -69.763)">
+                      <path id="Tracé_98" data-name="Tracé 98" d="M522.586,90.484l6.933-20.721,7.637,5.121Z"
+                        fill="#000" />
+                      <path id="Tracé_99" data-name="Tracé 99" d="M544.544,95.821l9.864-11.244,4.2,6.641Z"
+                        transform="translate(-12.878 -8.688)" fill="#000" />
+                    </g>
+                  </svg>
+                </span>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  APPLE <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item fw-lighter fs-6" href="#">Iphone 11s</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item fw-lighter fs-6" href="#">Iphone 12s pro</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item fw-lighter fs-6" href="#">Iphone 12s
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-colors">
+                <a class="nav-link active dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  SAMSUNG<i class="fa-solid fa-angle-down dropdown-arrow"></i>
+                </a>
+                <ul class="dropdown-menu nav-colors" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Samsung A02</a></li>
+                  <li><a class="dropdown-item" href="#">Samsung A12</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item nav-colors" href="#">Samsung M52</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-colors">
+                <a class="nav-link active dropdown-toggle nav-colors" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  AUTRES MARQUES<i class="fa-solid fa-angle-down dropdown-arrow"></i>
+                </a>
+                <ul class="dropdown-menu nav-colors" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Infinix </a></li>
+                  <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item nav-colors" href="#">Huawei</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link active nav-colors" aria-current="page" href="#">ACCESSOIRES</a>
+              </li>
+
+              <li class="nav-item">
+                <button class="navbar-button nav-colors">REVENDRE</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <nav>
+      <ul class="breadcrumb">
+        <li><a href="#" class="text-black">Accueil</a></li>
+        <li><a href="#">Profil</a></li>
+      </ul>
+    </nav>
+    <div class="content-page-info" style="background-color: #f5f6f8" media="(max-width: 600px)">
+      <div></div>
+      <main class="container d-flex">
+        <!-- hedha el sidebar el left tabda men hne -->
+        <div class="left-side" style="flex:3 ;">
+          <a href="#"class="button-side">
+            <div class="bg-white mb-3 element " class="margin-top: 0;">
+              <p class="text-black  mt-0 mb-0">Mes informations</p>
+            </div>
+          </a>
+          <a href="#"class="button-side"> 
+            <div class="bg-white mb-3 element">
+              <p class="text-black mb-0">Historique des commandes</p>
+            </div>
+          </a>
+          <a href="#"class="button-side">
+          <div class="bg-white mb-3 element">
+            <p class="text-black mb-0">Ma liste d'envies</p>
+          </div>
+        </a>
+        <a href="#"class="button-side">
+          <div class="bg-white mb-3 element">
+            <p class="text-black mb-0">Mes notification</p>
+          </div>
+          </a>
+          <a href="#"class="button-side">
+          <div class="bg-white mb-3 element activeee">
+            <p class=" mb-0">Détails reventes</p>
+          </div>
+          </a>
+          <a href="#"class="button-side">
+          <div class="bg-white mb-3 element">
+            <p class="text-black mb-0">Mes cartes</p>
+          </div>
+          </a>
+        </div>
+        <div class="w-80 px-3 pt-2 bg-white card-about" style="flex:9 ;">
+          <div class="align-items-start flex-column headin-form2">
+            <h2><i class="bi bi-laptop"></i></h2>
+            <h1>Détails reventes</h1>
+          </div>
+          <select class="detail_info" type="" >
+            <option value="1" selected>Numdro de commande 223435345 - iphone 12 PRO MAX</option>
+            <option value="1" default>Numdro de commande 223435345 - iphone 12 PRO MAX</option>
+            <option value="1" default>Numdro de commande 223435345 - iphone 12 PRO MAX</option>
+            <option value="1" default>Numdro de commande 223435345 - iphone 12 PRO MAX</option>
+          </select>
+          
+
+          <div class="iphone_detail">
+            <div class="info1">
+              <h3>iPhone 13 Apple 256 GO</h3>
+              <div class="info_detail">
+                <div class="detail_item">
+                  <p>Prix initial</p>
+                  <p class="descrep">493,000$</p>
+                </div>
+                <div class="detail_item">
+                  <p>Etat</p>
+                  <p class="descrep">Fonctionnel - Bon etat</p>
+                </div>
+                <div class="detail_item">
+                  <p>Client</p>
+                  <p class="descrep">Stephane</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="info1">
+              <h3>Date</h3>
+              <div class="info_detail">
+                <div class="detail_item">
+                  <p>Creation</p>
+                  <p class="descrep">22/12/2021 - 12h23</p>
+                </div>
+                <div class="detail_item">
+                  <p>Reception</p>
+                  <p class="descrep"> - </p>
+                </div>
+                <div class="detail_item">
+                  <p>Paiment</p>
+                  <p class="descrep"> - </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail_checkup">
+            <h1>Checkup declare</h1>
+            <h5>Produit debloque , exran micro rayures , Coque cassee, Produit fontictionnel</h5>
+
+            <div class="checkup_info">
+
+              <div class="info_detail2">
+                <div class="detail_item">
+                  <p>Etat</p>
+                  <p class="descrep">Colis a envoyer a Hexamobile</p>
+                </div>
+                <div class="detail_item">
+                  <p>Prix de rachet</p>
+                  <p class="descrep"> 493,00$ </p>
+                </div>
+                <div class="detail_item">
+                  <p>Piece(s) d'identite client</p>
+                  <a class="cColor descrep">TELECHARGER MES PIECES </a>
+                </div>
+              </div>
+              <div class="info_detail2">
+                <div class="detail_item">
+                  <p>Mode de livrasion</p>
+                  <p class="descrep">Bon Colissimo</p>
+                </div>
+                <div class="detail_item">
+                  <p>Bon colissimo</p>
+                  <button class="cColor">PARCOURIR </button>
+                </div>
+                <div class="detail_item">
+                  <p>Bon colissimo</p>
+                  <button class="cColor">PARCOURIR </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail_checkup">
+            <h1>Expédier le colis</h1>
+            
+            <div class="checkup_info">
+
+              <div class="info_detail2 py-5 px-4" >
+                <p class="text-black mb-4 desc-text">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                  doloremque
+                  laudantium,
+                  totam
+                  rem
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta
+                  sunt
+                  explicmo
+                  enim
+                  ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+              <div class="info_detail3  py-5 px-4">
+                <div class="detail_item w-60">
+                  <button class="bouton">PARCOURIR </button>
+                </div>
+              
+                <div class="detail_item">
+                  
+                  <button class="bouton2">IMPRIMER MON BON DE LIVRAISON </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+
+</html>
