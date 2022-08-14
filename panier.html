@@ -19,7 +19,7 @@
 
 
   <link rel="stylesheet" href="./public/style-login.css" type="text/css" media="all" />
-  <title>Mes commandes</title>
+  <title>panier</title>
   <style>
     .titre {
       font-size: 20px;
@@ -31,19 +31,73 @@
       color: #3C66AC;
     }
 
-    .notif{
-      
-      background-color: black;
-      color: white;
+    .panier {
+      position: relative;
+      background-color: white;
+      border-radius: 10px;
+
+
+
+    }
+
+    .delete {
+      position: absolute;
+      top: 0;
+      right: 5%;
+      background-color: transparent;
+
       text-align: center;
-      border-radius: 100px 0px 0px 100px;
+
       font-size: 10px;
-      padding: 5px 10px;
-      
-    };
-    .notif p{
+
+    }
+
+    .notif p {
       margin: 5px 0px;
     }
+
+    .garantit {
+      color: #3C66AC;
+    }
+
+    .bouton-commander {
+      color: white;
+      background-color: #3C66AC;
+      font-family: 'Krona one';
+      font-size: 12px;
+      padding: 1rem 1rem;
+      border-radius: 50px;
+      border: none;
+    }
+
+    .bottom {
+      position: fixed;
+      transform: translateZ(-42px);
+      transform: translateY(-15rem);
+    }
+
+    .text-desc {
+      font-family: 'Krona one';
+      text-transform: uppercase;
+      font-size: 22px;
+      line-height: 35px;
+    }
+
+    .ajouter {
+      position: absolute;
+      top: 30%;
+      font-size: smaller;
+
+    }
+
+    .ajouter a {
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Krona one';
+      font-size: 10px;
+      text-decoration: underline;
+    }
+
     .bouton-commande {
       border: 0.5px solid #3C66AC;
       border-radius: 200px;
@@ -62,9 +116,10 @@
         'opsz' 48
     }
 
-    .double_input_container {
-      gap: 30px;
-      padding-bottom: 2%;
+    .total {
+      color: white;
+      padding: auto;
+      margin: 1rem 0;
     }
   </style>
 </head>
@@ -95,11 +150,11 @@
               <div class="d-flex justify-content-between" style="gap: 10px; color: rgba(64, 93, 224, 0.212)">
                 <div class="dropdown">
                   <a href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-person text-size2" ></i>
+                    <i class="bi bi-person text-size2"></i>
                     <i></i>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              
+
                     <li><a class="dropdown-item nav-colors" href="#">profile</a></li>
                     <li>
                       <hr class="dropdown-divider">
@@ -209,42 +264,32 @@
     <nav>
       <ul class="breadcrumb">
         <li><a href="#" class="text-black">Accueil</a></li>
-        <li><a href="#">Profil</a></li>
+        <li><a href="#">Panier</a></li>
       </ul>
     </nav>
-    <div class="content-page-info" style="background-color: #f5f6f8; " media="(max-width: 600px)">
-      
+    <div class="content-page-info pt-0" style="background-color: #f5f6f8; z-index:1 ;" media="(max-width: 600px)">
+
       <div class="align-items-start flex-column headin-form2">
-        <img src="./public/assets/steps.png" width="70%"/>
-        
+        <img src="./public/assets/steps.png" width="70%" />
+
       </div>
       <main class="container d-flex">
-        
-       
+
+
         <!-- left side cards -->
-        
-        <div class="w-75 mr-2">
-          
-          <div class="container card mt-4" style="padding:1rem 0rem 1rem 0.5rem;">
+
+        <div class="w-75 mr-2 flex-6">
+
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
             <div class="row">
               <div class="col-3">
                 <div class="d-flex justify-content-center mb-2">
                   <img src=".\public\assets\phone-pic.png" width="40%" alt="phone">
                 </div>
-                <div class="card-phone-colors">
-                  <div class="d-flex justify-content-center mb-2">
-                    <div>
-                      <input class='color-1' name='color-1' type='radio' checked />
-                      <input class='color-2' name='color-1' type='radio' />
-                      <input class='color-3' name='color-1' type='radio' />
-                      <input class='color-4' name='color-1' type='radio' />
-                      <input class='color-5' name='color-1' type='radio' />
-                    </div>
-                  </div>
-                </div>
+
               </div>
               <div class="col-6">
-                <h3 class="titre">iPad air 2 (2014) - Wifi <span>x2</span></h3>
+                <h3 class="titre mb-4">iPad air 2 (2014) - Wifi <span>x2</span></h3>
                 <div class="d-flex justify-content-between">
 
                   <button class="px-4 py-2 bouton-commande">
@@ -259,8 +304,8 @@
 
                 </div>
                 <hr class="my-4">
-                <h5><span style="color: #3C66AC;">Etat comme neuf</span>
-                  <span  class="mx-1 fw-bold">
+                <h5>
+                  <span class="mx-1 fw-bold">
 
                     149,99£
                   </span>
@@ -268,48 +313,27 @@
               </div>
 
               <div class="col-3">
-                <div class="d-flex flex-column justify-content-between" style="height:100%;">
-                  <div class="flex-6">
-                    <div class="notif">
-                      <p class="m-0">DE NOUVEAU DISPONIBLE</p>
-                    </div>
+                <div class="d-flex flex-column justify-content-start" style="height:100%;">
+
+                  <div class="delete">
+                    <a href="#"><img src="./public/assets/delete-button-svgrepo-com.png" alt=""></a>
                   </div>
-                  <div class="d-flex flex-column justify-content-end my-auto" style="width:90%;">
-                    <div class="card-stars mx-auto"style="">
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <span>4/5</span>
-                    </div>
-                    <button class="main-button">JE DÉCOUVRE</button>
-                  </div>
+
 
                 </div>
               </div>
             </div>
           </div>
-          <div class="container card mt-4" style="padding:1rem 0rem 1rem 0.5rem;">
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
             <div class="row">
               <div class="col-3">
                 <div class="d-flex justify-content-center mb-2">
                   <img src=".\public\assets\phone-pic.png" width="40%" alt="phone">
                 </div>
-                <div class="card-phone-colors">
-                  <div class="d-flex justify-content-center mb-2">
-                    <div>
-                      <input class='color-1' name='color-1' type='radio' checked />
-                      <input class='color-2' name='color-1' type='radio' />
-                      <input class='color-3' name='color-1' type='radio' />
-                      <input class='color-4' name='color-1' type='radio' />
-                      <input class='color-5' name='color-1' type='radio' />
-                    </div>
-                  </div>
-                </div>
+
               </div>
               <div class="col-6">
-                <h3 class="titre">iPad air 2 (2014) - Wifi <span>x2</span></h3>
+                <h3 class="titre mb-4">iPad air 2 (2014) - Wifi <span>x2</span></h3>
                 <div class="d-flex justify-content-between">
 
                   <button class="px-4 py-2 bouton-commande">
@@ -324,8 +348,8 @@
 
                 </div>
                 <hr class="my-4">
-                <h5><span style="color: #3C66AC;">Etat comme neuf</span>
-                  <span  class="mx-1 fw-bold">
+                <h5>
+                  <span class="mx-1 fw-bold">
 
                     149,99£
                   </span>
@@ -333,48 +357,27 @@
               </div>
 
               <div class="col-3">
-                <div class="d-flex flex-column justify-content-between" style="height:100%;">
-                  <div class="flex-6">
-                    <div class="notif">
-                      <p class="m-0">DE NOUVEAU DISPONIBLE</p>
-                    </div>
+                <div class="d-flex flex-column justify-content-start" style="height:100%;">
+
+                  <div class="delete">
+                    <a href="#"><img src="./public/assets/delete-button-svgrepo-com.png" alt=""></a>
                   </div>
-                  <div class="d-flex flex-column justify-content-end my-auto" style="width:90%;">
-                    <div class="card-stars mx-auto"style="">
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <span>4/5</span>
-                    </div>
-                    <button class="main-button">JE DÉCOUVRE</button>
-                  </div>
+
 
                 </div>
               </div>
             </div>
           </div>
-          <div class="container card mt-4" style="padding:1rem 0rem 1rem 0.5rem;">
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
             <div class="row">
               <div class="col-3">
                 <div class="d-flex justify-content-center mb-2">
                   <img src=".\public\assets\phone-pic.png" width="40%" alt="phone">
                 </div>
-                <div class="card-phone-colors">
-                  <div class="d-flex justify-content-center mb-2">
-                    <div>
-                      <input class='color-1' name='color-1' type='radio' checked />
-                      <input class='color-2' name='color-1' type='radio' />
-                      <input class='color-3' name='color-1' type='radio' />
-                      <input class='color-4' name='color-1' type='radio' />
-                      <input class='color-5' name='color-1' type='radio' />
-                    </div>
-                  </div>
-                </div>
+
               </div>
               <div class="col-6">
-                <h3 class="titre">iPad air 2 (2014) - Wifi <span>x2</span></h3>
+                <h3 class="titre mb-4">iPad air 2 (2014) - Wifi <span>x2</span></h3>
                 <div class="d-flex justify-content-between">
 
                   <button class="px-4 py-2 bouton-commande">
@@ -389,8 +392,8 @@
 
                 </div>
                 <hr class="my-4">
-                <h5><span style="color: #3C66AC;">Etat comme neuf</span>
-                  <span  class="mx-1 fw-bold">
+                <h5>
+                  <span class="mx-1 fw-bold">
 
                     149,99£
                   </span>
@@ -398,48 +401,27 @@
               </div>
 
               <div class="col-3">
-                <div class="d-flex flex-column justify-content-between" style="height:100%;">
-                  <div class="flex-6">
-                    <div class="notif">
-                      <p class="m-0">DE NOUVEAU DISPONIBLE</p>
-                    </div>
+                <div class="d-flex flex-column justify-content-start" style="height:100%;">
+
+                  <div class="delete">
+                    <a href="#"><img src="./public/assets/delete-button-svgrepo-com.png" alt=""></a>
                   </div>
-                  <div class="d-flex flex-column justify-content-end my-auto" style="width:90%;">
-                    <div class="card-stars mx-auto"style="">
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <span>4/5</span>
-                    </div>
-                    <button class="main-button">JE DÉCOUVRE</button>
-                  </div>
+
 
                 </div>
               </div>
             </div>
           </div>
-          <div class="container card mt-4" style="padding:1rem 0rem 1rem 0.5rem;">
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
             <div class="row">
               <div class="col-3">
                 <div class="d-flex justify-content-center mb-2">
                   <img src=".\public\assets\phone-pic.png" width="40%" alt="phone">
                 </div>
-                <div class="card-phone-colors">
-                  <div class="d-flex justify-content-center mb-2">
-                    <div>
-                      <input class='color-1' name='color-1' type='radio' checked />
-                      <input class='color-2' name='color-1' type='radio' />
-                      <input class='color-3' name='color-1' type='radio' />
-                      <input class='color-4' name='color-1' type='radio' />
-                      <input class='color-5' name='color-1' type='radio' />
-                    </div>
-                  </div>
-                </div>
+
               </div>
               <div class="col-6">
-                <h3 class="titre">iPad air 2 (2014) - Wifi <span>x2</span></h3>
+                <h3 class="titre mb-4">iPad air 2 (2014) - Wifi <span>x2</span></h3>
                 <div class="d-flex justify-content-between">
 
                   <button class="px-4 py-2 bouton-commande">
@@ -454,8 +436,8 @@
 
                 </div>
                 <hr class="my-4">
-                <h5><span style="color: #3C66AC;">Etat comme neuf</span>
-                  <span  class="mx-1 fw-bold">
+                <h5>
+                  <span class="mx-1 fw-bold">
 
                     149,99£
                   </span>
@@ -463,48 +445,27 @@
               </div>
 
               <div class="col-3">
-                <div class="d-flex flex-column justify-content-between" style="height:100%;">
-                  <div class="flex-6">
-                    <div class="notif">
-                      <p class="m-0">DE NOUVEAU DISPONIBLE</p>
-                    </div>
+                <div class="d-flex flex-column justify-content-start" style="height:100%;">
+
+                  <div class="delete">
+                    <a href="#"><img src="./public/assets/delete-button-svgrepo-com.png" alt=""></a>
                   </div>
-                  <div class="d-flex flex-column justify-content-end my-auto" style="width:90%;">
-                    <div class="card-stars mx-auto"style="">
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <i class="fa-regular fa-star text-color-2"></i>
-                      <span>4/5</span>
-                    </div>
-                    <button class="main-button">JE DÉCOUVRE</button>
-                  </div>
+
 
                 </div>
               </div>
             </div>
           </div>
-          <div class="container card mt-4" style="padding:1rem 0rem 1rem 0.5rem;">
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
             <div class="row">
               <div class="col-3">
                 <div class="d-flex justify-content-center mb-2">
                   <img src=".\public\assets\phone-pic.png" width="40%" alt="phone">
                 </div>
-                <div class="card-phone-colors">
-                  <div class="d-flex justify-content-center mb-2">
-                    <div>
-                      <input class='color-1' name='color-1' type='radio' checked />
-                      <input class='color-2' name='color-1' type='radio' />
-                      <input class='color-3' name='color-1' type='radio' />
-                      <input class='color-4' name='color-1' type='radio' />
-                      <input class='color-5' name='color-1' type='radio' />
-                    </div>
-                  </div>
-                </div>
+
               </div>
               <div class="col-6">
-                <h3 class="titre">iPad air 2 (2014) - Wifi <span>x2</span></h3>
+                <h3 class="titre mb-4">iPad air 2 (2014) - Wifi <span>x2</span></h3>
                 <div class="d-flex justify-content-between">
 
                   <button class="px-4 py-2 bouton-commande">
@@ -519,8 +480,8 @@
 
                 </div>
                 <hr class="my-4">
-                <h5><span style="color: #3C66AC;">Etat comme neuf</span>
-                  <span  class="mx-1 fw-bold">
+                <h5>
+                  <span class="mx-1 fw-bold">
 
                     149,99£
                   </span>
@@ -528,14 +489,45 @@
               </div>
 
               <div class="col-3">
-                <div class="d-flex flex-column justify-content-between" style="height:100%;">
-                  <div class="flex-6">
-                    <div class="notif">
-                      <p class="m-0">DE NOUVEAU DISPONIBLE</p>
+                <div class="d-flex flex-column justify-content-start" style="height:100%;">
+
+                  <div class="delete">
+                    <a href="#"><img src="./public/assets/delete-button-svgrepo-com.png" alt=""></a>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="my-4 fw-bold text-desc">Complétez votre produit avec nos accessoires
+            à moitié prix</h2>
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
+            <div class="row">
+              <div class="col-4">
+                <div class="d-flex justify-content-center ">
+                  <img src=".\public\assets\kit.png" width="70%" alt="phone">
+                </div>
+                <div class="card-phone-colors">
+                  <div class="d-flex justify-content-center mb-2">
+                    <div>
+                      <input class='color-2' name='color-1' type='radio' checked/>
+                      <input class='color-3' name='color-1' type='radio' />
+                      <input class='color-5' name='color-1' type='radio' />
                     </div>
                   </div>
-                  <div class="d-flex flex-column justify-content-end my-auto" style="width:90%;">
-                    <div class="card-stars mx-auto"style="">
+                </div>
+
+              </div>
+              <div class="col-8 d-flex flex-column pt-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="titre mb-1">Airpods + coque </h3>
+
+                    <p class="fw-bold garantit">Garantie 2 ans</p>
+                  </div>
+                  <div>
+                    <div class="card-stars " style="">
                       <i class="fa-regular fa-star text-color-2"></i>
                       <i class="fa-regular fa-star text-color-2"></i>
                       <i class="fa-regular fa-star text-color-2"></i>
@@ -543,25 +535,285 @@
                       <i class="fa-regular fa-star text-color-2"></i>
                       <span>4/5</span>
                     </div>
-                    <button class="main-button">JE DÉCOUVRE</button>
                   </div>
-
                 </div>
+
+                <hr class="my-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div>
+                    <span class="text-muted">
+                      <s>29.00€</s>
+                    </span>
+                    <span>
+                      <b>14.99 €</b>
+                    </span>
+                    </div>
+                    <button class="px-4 py-2 mt-2 bouton-commande">
+                      Économisez 50%
+                    </button>
+                  </div>
+                 
+                  <div>
+                    <div class="">
+                      <button class="main-button me-2 fw-medium" style="font-family:'Krona one' ; font-size:12px">AJOUER AU PANIER</button>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+
+
             </div>
           </div>
-          
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
+            <div class="row">
+              <div class="col-4">
+                <div class="d-flex justify-content-center ">
+                  <img src=".\public\assets\kit.png" width="70%" alt="phone">
+                </div>
+                <div class="card-phone-colors">
+                  <div class="d-flex justify-content-center mb-2">
+                    <div>
+                      <input class='color-2' name='color-1' type='radio' checked/>
+                      <input class='color-3' name='color-1' type='radio' />
+                      <input class='color-5' name='color-1' type='radio' />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-8 d-flex flex-column pt-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="titre mb-1">Airpods + coque </h3>
+
+                    <p class="fw-bold garantit">Garantie 2 ans</p>
+                  </div>
+                  <div>
+                    <div class="card-stars " style="">
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <span>4/5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div>
+                    <span class="text-muted">
+                      <s>29.00€</s>
+                    </span>
+                    <span>
+                      <b>14.99 €</b>
+                    </span>
+                    </div>
+                    <button class="px-4 py-2 mt-2 bouton-commande">
+                      Économisez 50%
+                    </button>
+                  </div>
+                 
+                  <div>
+                    <div class="">
+                      <button class="main-button me-2 fw-medium" style="font-family:'Krona one' ; font-size:12px">AJOUER AU PANIER</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
+            <div class="row">
+              <div class="col-4">
+                <div class="d-flex justify-content-center ">
+                  <img src=".\public\assets\kit.png" width="70%" alt="phone">
+                </div>
+                <div class="card-phone-colors">
+                  <div class="d-flex justify-content-center mb-2">
+                    <div>
+                      <input class='color-2' name='color-1' type='radio' checked/>
+                      <input class='color-3' name='color-1' type='radio' />
+                      <input class='color-5' name='color-1' type='radio' />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-8 d-flex flex-column pt-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="titre mb-1">Airpods + coque </h3>
+
+                    <p class="fw-bold garantit">Garantie 2 ans</p>
+                  </div>
+                  <div>
+                    <div class="card-stars " style="">
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <span>4/5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div>
+                    <span class="text-muted">
+                      <s>29.00€</s>
+                    </span>
+                    <span>
+                      <b>14.99 €</b>
+                    </span>
+                    </div>
+                    <button class="px-4 py-2 mt-2 bouton-commande">
+                      Économisez 50%
+                    </button>
+                  </div>
+                 
+                  <div>
+                    <div class="">
+                      <button class="main-button me-2 fw-medium" style="font-family:'Krona one' ; font-size:12px">AJOUER AU PANIER</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+          <div class="container card mt-4 position-relative" style="padding:1rem 0rem 1rem 0.5rem;">
+            <div class="row">
+              <div class="col-4">
+                <div class="d-flex justify-content-center ">
+                  <img src=".\public\assets\kit.png" width="70%" alt="phone">
+                </div>
+                <div class="card-phone-colors">
+                  <div class="d-flex justify-content-center mb-2">
+                    <div>
+                      <input class='color-2' name='color-1' type='radio' checked/>
+                      <input class='color-3' name='color-1' type='radio' />
+                      <input class='color-5' name='color-1' type='radio' />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-8 d-flex flex-column pt-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h3 class="titre mb-1">Airpods + coque </h3>
+
+                    <p class="fw-bold garantit">Garantie 2 ans</p>
+                  </div>
+                  <div>
+                    <div class="card-stars " style="">
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <i class="fa-regular fa-star text-color-2"></i>
+                      <span>4/5</span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-4">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div>
+                    <span class="text-muted">
+                      <s>29.00€</s>
+                    </span>
+                    <span>
+                      <b>14.99 €</b>
+                    </span>
+                    </div>
+                    <button class="px-4 py-2 mt-2 bouton-commande">
+                      Économisez 50%
+                    </button>
+                  </div>
+                 
+                  <div>
+                    <div class="">
+                      <button class="main-button me-2 fw-medium" style="font-family:'Krona one' ; font-size:12px">AJOUER AU PANIER</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+
+
         </div>
         <!-- left side toufa hne -->
 
         <!-- right side tabda hne -->
-        <div>
+        <div id="right" class="p-4 w-40 pr-0 mb-8 position-relative">
+          <div id="cash" class="py-4 panier">
+            <h6 class="fw-bold ms-4 mb-4 fs-5">Recapitulatif</h6>
+            <div class="d-flex justify-content-between mx-4">
+              <div class="flex-8">
+                <p class="fw-bold">2 artiles</p>
+              </div>
+              <div class="flex-4 fw-bold"> 149.99 £</div>
 
+            </div>
+            <div class="d-flex justify-content-between mx-4">
+              <div class="flex-8">
+                <p class="fw-bold">Frais de Livraison</p>
+              </div>
+              <div class="flex-4 fw-bold"> Gratuit</div>
+
+            </div>
+            <div class="d-flex justify-content-between px-4" style="background-color:#3C66AC;">
+              <div class="flex-8 ">
+                <p class="fw-bold total">Total panier</p>
+              </div>
+              <div class="flex-4">
+                <p class="fw-bold total"> 149.99 £</p>
+              </div>
+
+            </div>
+            <div class="d-flex flex-column text-center py-4">
+
+              <h6 class="fw-bold" style="color: #3C66AC;">vous avez un question ?</h6>
+              <img class="mx-auto" src="./public/assets/sale-svgrepo-com.png" width="20%" alt="">
+
+            </div>
+            <div class="w-75 px-4 position-relative">
+              <div>
+                <input class="search-input" type="text" placeholder="33225588" aria-label="Search">
+                <span class="ajouter" style="right: -15%;"><a href="#">AJOUTER</a> </span>
+              </div>
+            </div>
+            <div class="w-75 px-4 mx-auto my-4">
+
+              <button class="bouton-commander mx-auto">COMMANDER</button>
+
+            </div>
+          </div>
         </div>
       </main>
     </div>
 
-    <div class="d-flex align-items-center pt-5 bg-white">
+    <div id="footer" class="d-flex align-items-center pt-5 bg-white" style="transform: translateZ(-42px);">
       <div class="container-fluid">
         <div class="row mb-5">
           <div class="col-3">
@@ -704,7 +956,7 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" style="transform: translateZ(-42px);">
       <div class="container-fluid col-10">
         <div class="row div-1 d-flex align-items-center">
           <div class="col-lg-5 mt-1 col-md-12">
@@ -780,8 +1032,36 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-</script>
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+    var span = $('#cash'),
+      div = $('#right'),
+      win = $(window),
+      footer = $("#footer"),
+      divHeight = div.height();
+    $(document).scroll(compute).scroll();
+    $(window).resize(compute).resize();
+
+    function compute() {
+      var spanHeight = span.outerHeight(),
+        spanOffset = span.offset().top + spanHeight,
+        footeroffset = footer.offset().top + footer.outerHeight(),
+        divOffset = div.offset().top + divHeight;
+      console.log("footer offset", footeroffset)
+      if (spanHeight <= ($(window).scrollTop() + $(window).height() - spanHeight)) {
+        span.addClass('bottom');
+      }
+      var windowScroll = win.scrollTop() + win.height() - 50;
+
+      if (spanHeight > ($(window).scrollTop() + $(window).height() - spanHeight)) {
+        span.removeClass('bottom');
+      }
+
+      console.log('spanOffset=' + spanHeight, 'windowScroll=' + ($(window).scrollTop() + $(window).height() + spanHeight));
+    }
+  </script>
 </body>
 
 </html>
