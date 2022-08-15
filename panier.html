@@ -35,6 +35,7 @@
       position: relative;
       background-color: white;
       border-radius: 10px;
+      filter: drop-shadow(0.5px 1px 2px rgba(0, 0, 0, 0.151) );
 
 
 
@@ -73,7 +74,7 @@
     .bottom {
       position: fixed;
       transform: translateZ(-42px);
-      transform: translateY(-15rem);
+      transform: translateY(-18rem);
     }
 
     .text-desc {
@@ -107,7 +108,11 @@
       font-family: 'krona one';
       color: rgba(79, 161, 182, 1);
     }
-
+    .step-title{
+      margin-left: -60%;
+    font-size: 12px;
+    color: rgba(79, 161, 182, 1);
+    }
     .material-symbols-outlined {
       font-variation-settings:
         'FILL' 0,
@@ -271,6 +276,7 @@
 
       <div class="align-items-start flex-column headin-form2">
         <img src="./public/assets/steps.png" width="70%" />
+        <h3 class="step-title">Confirmation</h3>
 
       </div>
       <main class="container d-flex">
@@ -770,14 +776,14 @@
             <h6 class="fw-bold ms-4 mb-4 fs-5">Recapitulatif</h6>
             <div class="d-flex justify-content-between mx-4">
               <div class="flex-8">
-                <p class="fw-bold">2 artiles</p>
+                <p class="fw-bold"  style="color:#3C66AC;">2 articles</p>
               </div>
               <div class="flex-4 fw-bold"> 149.99 £</div>
 
             </div>
             <div class="d-flex justify-content-between mx-4">
               <div class="flex-8">
-                <p class="fw-bold">Frais de Livraison</p>
+                <p class="fw-bold"  style="color:#3C66AC;">Frais de Livraison</p>
               </div>
               <div class="flex-4 fw-bold"> Gratuit</div>
 
@@ -793,7 +799,7 @@
             </div>
             <div class="d-flex flex-column text-center py-4">
 
-              <h6 class="fw-bold" style="color: #3C66AC;">vous avez un question ?</h6>
+              <h6 class="fw-bold" style="color:#3C66AC;">vous avez un code promo ?</h6>
               <img class="mx-auto" src="./public/assets/sale-svgrepo-com.png" width="20%" alt="">
 
             </div>
@@ -813,7 +819,7 @@
       </main>
     </div>
 
-    <div id="footer" class="d-flex align-items-center pt-5 bg-white" style="transform: translateZ(-42px);">
+    <div id="footer" class="d-flex align-items-center pt-5 bg-white" style="transform: translateZ(-42px); font-family:'Krona one'; font-size:12px">
       <div class="container-fluid">
         <div class="row mb-5">
           <div class="col-3">
@@ -956,7 +962,7 @@
       </div>
     </div>
 
-    <div class="footer" style="transform: translateZ(-42px);">
+    <div class="footer" style="transform: translateZ(-42px); font-family:'Krona one'; font-size:12px">
       <div class="container-fluid col-10">
         <div class="row div-1 d-flex align-items-center">
           <div class="col-lg-5 mt-1 col-md-12">
