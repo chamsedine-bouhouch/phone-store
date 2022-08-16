@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./public/owlCarousel/owlCarousel2-3-4.css" />
+    <link rel="stylesheet" href="./public/owlCarousel/assets.css'" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./public/silde1.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="./public/slide-2.css" />
+    <link rel="stylesheet" href="./public/slide-3.css" />
+    <link rel="stylesheet" href="./public/slide4.css" />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./public/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="./public/style-login.css"
+      type="text/css"
+      media="all"
+    />
+    <title>Revendre</title>
+    <style>
+      .top_intoduction {
+        height: 20vh;
+        width: 100%;
+        background-color: #00a7bc;
+        /* margin-bottom: 5%; */
+      }
+      .top_intoduction_part1 {
+        flex: 4;
+      }
+      .top_intoduction_part2 {
+        flex: 2;
+      }
+      .top_intoduction_part3 {
+        flex: 4;
+      }
+      .button4 {
+        font-size: 14px;
+        margin-top: 15px;
+        font-family: "Krona one";
+        background-color: transparent;
+        color: white;
+        padding: 12px 22px;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        display: block;
+        height: 50px;
+        /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+          0 3px 10px 0 rgba(0, 0, 0, 0.11); */
+      }
+
+      .button5 {
+        font-size: 14px;
+        margin-top: 15px;
+        font-family: "Krona one";
+        background-color: transparent;
+        color: black;
+        padding: 12px 22px;
+        border: 1px solid black;
+        border-radius: 25px;
+        display: block;
+        height: 50px;
+      }
+      .how_to_use {
+        padding: 5% 5% 3% 5%;
+        background-color: #f5f6f8;
+      }
+      .description_title {
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .vertical_alignement_section {
+        padding: 5% 20% 5% 20%;
+      }
+      .vertical_alignement_title {
+        color: #0275d8;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .pourquoi_revendre_section {
+        background-image: url(./public/assets/comment\ ca\ marche.png);
+        padding: 3% 5% 4% 6%;
+      }
+      /* .pourquoi_revendre_part1 {
+        list-style-type: none;
+      } */
+      .pourquoi_revendre_part2 {
+        padding: 5% 0 0 0;
+      }
+      .FAQ_container {
+        padding: 2% 20% 10% 20%;
+        background-color: #f5f6f8;
+      }
+      /* .questions_container{
+        padding:
+      } */
+      .button7 {
+        background-color: #fff !important;
+        border: 1px solid rgba(79, 161, 182, 1);
+        display: block;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 2% 4% 2% 4%;
+      }
+      .button7_active {
+        background-color: #fff !important;
+        border: 1px solid rgba(79, 161, 182, 1);
+        display: block;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 2% 4% 2% 4%;
+        color: rgba(79, 161, 182, 1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .question {
+        background-color: #fff !important;
+        padding: 4% 4% 5% 4%;
+        margin-bottom: 3%;
+        border-radius: 20px;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2),
+          0 6px 10px 0 rgba(0, 0, 0, 0.19);
+      }
+      .step_section {
+        padding: 5% 10% 3% 10%;
+        background-color: #f5f6f8;
+      }
+      .button11 {
+        border: 1px solid rgba(79, 161, 182, 1);
+        border-radius: 45px;
+        background-color: transparent;
+      }
+      .loading_bar {
+        background-color: #f5f6f8;
+        position: relative;
+        padding-top: 1%;
+      }
+      .percentage_position {
+        position: absolute;
+        left: 90%;
+        bottom: 100%;
+        font-weight: bold;
+        font-size: 15px;
+      }
+      .icon-end {
+        position: absolute;
+        left: 10%;
+        bottom: 20%;
+
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        color: #3f73ad;
+        font-size: 12px;
+      }
+      .list_text {
+        color: rgba(79, 161, 182, 1);
+        font-size: 12px;
+        font-weight: 500;
+        font-style: "Lato";
+      }
+      .button13 {
+        background-color: transparent;
+        color: rgba(79, 161, 182, 1);
+        border: 1px solid rgba(79, 161, 182, 1);
+        border-radius: 55px;
+        width: 100%;
+        padding: 3% 3%;
+        font-weight: 300;
+        font-style: "Krona one";
+      }
+      .revendre_form {
+        border: 2px solid black;
+        padding: 1% 2%;
+        border-radius: 30px;
+        color: #4b97b3;
+        font-size: 12px;
+      }
+      .revendre_form::placeholder {
+        color: #4b97b3;
+        font-weight: bold;
+      }
+      .revendre_form_btn {
+        padding: 1% 2%;
+        border-radius: 30px;
+        color: white;
+        border-radius: 30px;
+        background-color: rgba(79, 161, 182, 1);
+        border: 1px solid rgba(79, 161, 182, 1);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand col-lg-3 mt-5" href="#">
+              <img src="./public/assets/logo.png" alt="logo" width="250px" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse text-white col-lg-7 d-flex"
+              id="navbarSupportedContent"
+            >
+              <div class="nav-search col-lg-12 nav-colors">
+                <div class="nav-search-input nav-colors">
+                  <div>
+                    <input
+                      class="search-input"
+                      type="text"
+                      placeholder="Que cherchez vous ?"
+                      aria-label="Search"
+                    />
+                    <span class="search-icon"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between"
+                  style="gap: 10px; color: rgba(64, 93, 224, 0.212)"
+                >
+                  <div class="dropdown">
+                    <a
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="bi bi-person text-size2"></i>
+                      <i></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item nav-colors" href="#">profile</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item nav-colors" href="#">logout </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href=""><i class="bi bi-heart light text-size2"></i></a>
+                  <a href=""><i class="bi bi-bag-plus text-size2"></i></a>
+                </div>
+              </div>
+              <ul class="navbar-nav mb-lg-3 col-lg-10 mb-lg-1">
+                <li
+                  class="nav-item d-flex"
+                  style="position: relative; width: 135px"
+                >
+                  <span class="custom-btn-bar-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9.504"
+                      height="25.402"
+                      viewBox="0 0 9.504 25.402"
+                    >
+                      <line
+                        id="Ligne_2"
+                        data-name="Ligne 2"
+                        y1="22.904"
+                        x2="7.007"
+                        transform="translate(1.249 1.249)"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </span>
+                  <div class="custom-btn">
+                    <a
+                      class="nav-link active text-white nav-colors"
+                      style="font-weight: 300"
+                      aria-current="page"
+                      href="#"
+                      >VENTES FLASH</a
+                    >
+                  </div>
+                  <span class="custom-btn-bar-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="9.504"
+                      height="25.402"
+                      viewBox="0 0 9.504 25.402"
+                    >
+                      <line
+                        id="Ligne_1"
+                        data-name="Ligne 1"
+                        y1="22.904"
+                        x2="7.007"
+                        transform="translate(1.249 1.249)"
+                        fill="none"
+                        stroke="#000"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="custom-btn-tic">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="20.721"
+                      viewBox="0 0 23.147 20.721"
+                    >
+                      <g
+                        id="Groupe_2"
+                        data-name="Groupe 2"
+                        transform="translate(-522.586 -69.763)"
+                      >
+                        <path
+                          id="Tracé_98"
+                          data-name="Tracé 98"
+                          d="M522.586,90.484l6.933-20.721,7.637,5.121Z"
+                          fill="#000"
+                        />
+                        <path
+                          id="Tracé_99"
+                          data-name="Tracé 99"
+                          d="M544.544,95.821l9.864-11.244,4.2,6.641Z"
+                          transform="translate(-12.878 -8.688)"
+                          fill="#000"
+                        />
+                      </g>
+                    </svg>
+                  </span>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link active dropdown-toggle nav-colors"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    APPLE <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item fw-lighter fs-6" href="#"
+                        >Iphone 11s</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item fw-lighter fs-6" href="#"
+                        >Iphone 12s pro</a
+                      >
+                    </li>
+                    <li></li>
+                    <li>
+                      <a class="dropdown-item fw-lighter fs-6" href="#"
+                        >Iphone 12s
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown nav-colors">
+                  <a
+                    class="nav-link active dropdown-toggle nav-colors"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    SAMSUNG<i class="fa-solid fa-angle-down dropdown-arrow"></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu nav-colors"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">Samsung A02</a></li>
+                    <li><a class="dropdown-item" href="#">Samsung A12</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item nav-colors" href="#"
+                        >Samsung M52</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown nav-colors">
+                  <a
+                    class="nav-link active dropdown-toggle nav-colors"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    AUTRES MARQUES<i
+                      class="fa-solid fa-angle-down dropdown-arrow"
+                    ></i>
+                  </a>
+                  <ul
+                    class="dropdown-menu nav-colors"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li><a class="dropdown-item" href="#">Infinix </a></li>
+                    <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item nav-colors" href="#">Huawei</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item me-3">
+                  <a
+                    class="nav-link active nav-colors"
+                    aria-current="page"
+                    href="#"
+                    >ACCESSOIRES</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <button class="navbar-button nav-colors">REVENDRE</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <nav>
+        <ul class="breadcrumb">
+          <li><a href="#" class="text-black">Accueil</a></li>
+          <li><a href="#">Revendre</a></li>
+        </ul>
+      </nav>
+      <!-- green section -->
+      <section class="top_intoduction d-flex">
+        <div
+          class="top_intoduction_part1 d-flex align-items-center justify-content-evenly mb-3"
+        >
+          <button class="btn button4">Acceuil</button>
+          <button class="btn button5">Comment ca marche ?</button>
+          <button class="btn button4">FAQ</button>
+        </div>
+        <div class="top_intoduction_part2">
+          <img
+            src="public/assets/women-bg.PNG"
+            style="height: 100%; width: 100%; object-fit: contain"
+          />
+        </div>
+        <div
+          class="top_intoduction_part3 d-flex align-items-end justify-content-around"
+        >
+          <div>
+            <div class="d-flex justify-content-center">
+              <img src="public/assets/head.png" width="40" />
+            </div>
+            <p class="text-white">
+              Rachat a prix
+              <span class="text-center text-black text-uppercase"
+                >imbattables</span
+              >
+            </p>
+          </div>
+          <div>
+            <div class="d-flex justify-content-center">
+              <span class="text-white" style="font-size: 25px">522</span>
+            </div>
+            <p class="text-white">
+              Produits revendus sur
+              <span class="text-center text-black text-uppercase"
+                >Hexamobile.fr</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add main content -->
+      <main class="step_section">
+        <div class="mb-4" style="background-color: #f5f6f8">
+          <div class="loading_bar">
+            <div
+              class="icon-end d-flex justify-content-center"
+              style="gap: 80px"
+            >
+              <div>
+                <img src="./public/assets/flectiation.png" height="30" alt="" />
+                <p class="text-capitalize">étape 1</p>
+              </div>
+              <div>
+                <img src="./public/assets/flectiation.png" height="30" alt="" />
+                <p class="text-capitalize">étape 2</p>
+              </div>
+              <div>
+                <img src="./public/assets/flectiation.png" height="30" alt="" />
+                <p class="text-capitalize">étape 3</p>
+              </div>
+              <div>
+                <img src="./public/assets/flectiation.png" height="30" alt="" />
+                <p class="text-capitalize">étape 4</p>
+              </div>
+              <div>
+                <img src="./public/assets/flectiation.png" height="30" alt="" />
+                <p class="text-capitalize">étape 5</p>
+              </div>
+              <div>
+                <img src="./public/assets/flectiation.png" height="30" alt="" />
+                <p class="text-capitalize">étape 6</p>
+              </div>
+              <div>
+                <img src="./public/assets/flectiation.png" height="30" alt="" />
+                <p class="text-capitalize">étape 6</p>
+              </div>
+            </div>
+            <span class="percentage_position">90%</span>
+            <div class="d-flex" style="height: 10px">
+              <div style="background-color: #3c66ac; width: 90%"></div>
+              <div style="background-color: white; width: 10%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white px-5 pb-5 pt-5 rounded-3">
+          <h5 class="text-center text-capitalize">étape 8</h5>
+          <p
+            class="text-center pb-0"
+            style="
+              color: rgba(79, 161, 182, 1);
+              font-weight: 500;
+              font-size: 12px;
+            "
+          >
+            Votre avez accepté de vendre votre appareil:
+            <span class="text-black">493.00 €</span>
+          </p>
+          <p class="text-center pb-4 text-uppercase">
+            connecté en tant que <a href="#">stéphane</a>. ce n'est pas vous ?
+            <a href="#">se déconnecter</a>
+          </p>
+          <div>
+            <div class="d-flex align-items-center justify-content-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="40.242"
+                viewBox="0 0 50 40.242"
+              >
+                <g
+                  id="Groupe_1695"
+                  data-name="Groupe 1695"
+                  transform="translate(-688.154 -57.903)"
+                >
+                  <g
+                    id="Groupe_1616"
+                    data-name="Groupe 1616"
+                    transform="translate(688.154 68.22)"
+                  >
+                    <path
+                      id="Tracé_2728"
+                      data-name="Tracé 2728"
+                      d="M723.36,76.721l-29.95.164a4.639,4.639,0,0,0-3.15.794,4.418,4.418,0,0,0-1.5,3.143c0,7.532-.2,14.529-.061,21.746a4.167,4.167,0,0,0,.451,2.193c.838,1.314,2.721,1.124,4.279,1.124,10.549,0,19.406.433,29.15.016,1.436-.061,3.082.242,4.079-.793a4.74,4.74,0,0,0,.943-3.065c.376-5.7.134-19.74.134-21.983C727.738,78.106,727.058,77.093,723.36,76.721Z"
+                      transform="translate(-688.373 -76.439)"
+                      fill="#fff"
+                    />
+                    <path
+                      id="Tracé_2729"
+                      data-name="Tracé 2729"
+                      d="M713.062,106.146c-3.1,0-6.192-.047-9.375-.095-3.351-.051-6.815-.1-10.473-.1-.171,0-.346,0-.523,0-1.483.02-3.164.042-3.994-1.259a4.428,4.428,0,0,1-.5-2.339c-.085-4.5-.041-8.836.006-13.425.028-2.7.056-5.489.056-8.326a4.7,4.7,0,0,1,1.589-3.353,4.875,4.875,0,0,1,3.337-.866l29.95-.164a.173.173,0,0,1,.029,0c3.894.392,4.631,1.575,4.631,3.62,0,.418.008,1.247.02,2.356.05,4.869.153,15-.153,19.646a4.92,4.92,0,0,1-1.022,3.242c-.868.9-2.126.887-3.343.873-.309,0-.627-.007-.928.006C719.206,106.1,716.13,106.146,713.062,106.146Zm-19.847-.761c3.662,0,7.129.052,10.481.1,6.326.1,12.3.186,18.656-.087.315-.013.642-.01.958-.006,1.147.014,2.231.025,2.93-.7a4.486,4.486,0,0,0,.865-2.888c.305-4.623.2-14.741.153-19.6-.011-1.111-.02-1.943-.02-2.362,0-1.826-.594-2.7-4.11-3.058l-29.935.164a4.371,4.371,0,0,0-2.963.721,4.125,4.125,0,0,0-1.4,2.934c0,2.84-.029,5.632-.056,8.332-.047,4.585-.091,8.916-.006,13.409a3.907,3.907,0,0,0,.407,2.047c.661,1.036,2.11,1.017,3.511,1C692.863,105.387,693.041,105.385,693.214,105.385Z"
+                      transform="translate(-688.154 -76.22)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1617"
+                    data-name="Groupe 1617"
+                    transform="translate(688.192 86.01)"
+                  >
+                    <path
+                      id="Tracé_2730"
+                      data-name="Tracé 2730"
+                      d="M688.721,111.481c13.406,0,25.958.387,38.981.2-.015-.01.105-3.261.105-3.261l-39.048-.11Z"
+                      transform="translate(-688.439 -108.024)"
+                      fill="#acd4f7"
+                    />
+                    <path
+                      id="Tracé_2731"
+                      data-name="Tracé 2731"
+                      d="M719.759,111.794c-5.062,0-10.091-.06-15.314-.123-5.171-.062-10.519-.127-15.943-.127a.281.281,0,0,1-.282-.285l.038-3.175a.281.281,0,0,1,.282-.278h0l39.048.11a.281.281,0,0,1,.28.292c-.044,1.205-.109,3.037-.107,3.224a.268.268,0,0,1-.012.113.282.282,0,0,1-.264.195C724.884,111.779,722.318,111.794,719.759,111.794Zm-30.972-.813c5.33,0,10.582.065,15.665.126,7.766.093,15.106.182,22.756.073,0-.264.016-.684.04-1.366.018-.514.037-1.027.047-1.335l-38.477-.109Z"
+                      transform="translate(-688.221 -107.806)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1618"
+                    data-name="Groupe 1618"
+                    transform="translate(698.43 57.903)"
+                  >
+                    <path
+                      id="Tracé_2732"
+                      data-name="Tracé 2732"
+                      d="M741.605,58.4l-29.95.164a4.64,4.64,0,0,0-3.151.794,4.418,4.418,0,0,0-1.5,3.144c0,7.531-.2,14.529-.062,21.746a4.173,4.173,0,0,0,.451,2.193c.838,1.314,2.721,1.125,4.279,1.125,10.55,0,20.075.016,29.15.016,1.437,0,3.082.242,4.079-.794a4.737,4.737,0,0,0,.943-3.065c.376-5.7.133-19.74.133-21.983C745.983,59.788,745.3,58.776,741.605,58.4Z"
+                      transform="translate(-706.617 -58.122)"
+                      fill="#fff"
+                    />
+                    <path
+                      id="Tracé_2733"
+                      data-name="Tracé 2733"
+                      d="M742,87.672c-.239,0-.475-.006-.706-.012s-.462-.012-.687-.012c-4.367,0-8.838,0-13.477-.008-5,0-10.2-.008-15.673-.008-.171,0-.346,0-.523,0-1.484.02-3.165.042-3.994-1.259a4.337,4.337,0,0,1-.5-2.339c-.085-4.5-.041-8.838.006-13.428.028-2.7.056-5.487.056-8.323a4.7,4.7,0,0,1,1.589-3.353,4.873,4.873,0,0,1,3.337-.866l29.95-.164.03,0c3.894.391,4.631,1.574,4.631,3.62,0,.418.008,1.246.02,2.355.05,4.869.153,15-.154,19.646a4.918,4.918,0,0,1-1.022,3.242A3.81,3.81,0,0,1,742,87.672Zm-30.543-.6c5.473,0,10.671,0,15.673.008,4.639,0,9.11.008,13.476.008.23,0,.465.006.7.012,1.191.031,2.422.063,3.175-.719a4.49,4.49,0,0,0,.865-2.888c.305-4.624.2-14.741.152-19.6-.011-1.111-.02-1.941-.02-2.36,0-1.827-.594-2.7-4.109-3.058l-29.935.164a4.376,4.376,0,0,0-2.963.721,4.127,4.127,0,0,0-1.4,2.934c0,2.839-.028,5.629-.056,8.328-.047,4.586-.091,8.918-.006,13.412a3.9,3.9,0,0,0,.406,2.047c.661,1.036,2.109,1.017,3.512,1C711.108,87.07,711.285,87.068,711.458,87.068Z"
+                      transform="translate(-706.399 -57.903)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1619"
+                    data-name="Groupe 1619"
+                    transform="translate(702.512 76.894)"
+                  >
+                    <path
+                      id="Tracé_2734"
+                      data-name="Tracé 2734"
+                      d="M718.658,92.186h-4.729a.282.282,0,0,1,0-.564h4.729a.282.282,0,0,1,0,.564Z"
+                      transform="translate(-713.647 -91.622)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1620"
+                    data-name="Groupe 1620"
+                    transform="translate(711.268 76.894)"
+                  >
+                    <path
+                      id="Tracé_2735"
+                      data-name="Tracé 2735"
+                      d="M734.2,92.186h-4.728a.282.282,0,1,1,0-.564H734.2a.282.282,0,0,1,0,.564Z"
+                      transform="translate(-729.193 -91.622)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1621"
+                    data-name="Groupe 1621"
+                    transform="translate(720.024 76.894)"
+                  >
+                    <path
+                      id="Tracé_2736"
+                      data-name="Tracé 2736"
+                      d="M749.75,92.186h-4.729a.282.282,0,0,1,0-.564h4.729a.282.282,0,0,1,0,.564Z"
+                      transform="translate(-744.739 -91.622)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1622"
+                    data-name="Groupe 1622"
+                    transform="translate(728.78 76.894)"
+                  >
+                    <path
+                      id="Tracé_2737"
+                      data-name="Tracé 2737"
+                      d="M765.295,92.186h-4.728a.282.282,0,0,1,0-.564h4.728a.282.282,0,1,1,0,.564Z"
+                      transform="translate(-760.285 -91.622)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1623"
+                    data-name="Groupe 1623"
+                    transform="translate(702.502 80.97)"
+                  >
+                    <path
+                      id="Tracé_2738"
+                      data-name="Tracé 2738"
+                      d="M713.911,99.465a.282.282,0,0,1,0-.563c2.7-.039,5.508-.03,8.222-.022,2.681.009,5.453.017,8.091-.021a.282.282,0,1,1,.008.563c-2.644.038-5.419.03-8.1.021-2.711-.009-5.515-.018-8.212.021Z"
+                      transform="translate(-713.629 -98.859)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1624"
+                    data-name="Groupe 1624"
+                    transform="translate(702.645 66.259)"
+                  >
+                    <path
+                      id="Tracé_2739"
+                      data-name="Tracé 2739"
+                      d="M722.6,73.9a.654.654,0,0,0-.731-.653c-2.175-.034-4.576.126-6.7.051a.778.778,0,0,0-.671.194.766.766,0,0,0-.1.469c0,1.613-.005,3.037-.008,4.65a.417.417,0,0,0,.45.449c2.536,0,4.766.088,7.289-.058.461-.027.586-.474.586-.911C722.708,76.874,722.7,75.511,722.6,73.9Z"
+                      transform="translate(-714.102 -72.958)"
+                      fill="#acd4f7"
+                    />
+                    <path
+                      id="Tracé_2740"
+                      data-name="Tracé 2740"
+                      d="M718.6,79.148c-.64,0-1.281-.007-1.934-.013-.669-.007-1.348-.014-2.05-.014a.715.715,0,0,1-.526-.2.765.765,0,0,1-.205-.533l.007-4.649a1.022,1.022,0,0,1,.16-.638,1.037,1.037,0,0,1,.905-.306c1.158.041,2.423.011,3.645-.018,1.015-.024,2.064-.048,3.053-.033a.932.932,0,0,1,1.008.917c.1,1.627.109,3.026.109,4.208,0,1.031-.6,1.177-.852,1.192C720.767,79.129,719.682,79.148,718.6,79.148Zm-3.762-5.791c-.122,0-.282.012-.336.084a.6.6,0,0,0-.046.3l-.008,4.65a.207.207,0,0,0,.041.133.193.193,0,0,0,.127.033c.7,0,1.385.007,2.055.014,1.751.017,3.4.034,5.217-.072.213-.012.321-.224.321-.629,0-1.174-.008-2.563-.109-4.173h0c-.012-.2-.075-.383-.454-.389-.978-.015-2.021.01-3.031.033-1.231.029-2.5.06-3.678.018Z"
+                      transform="translate(-713.883 -72.74)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1625"
+                    data-name="Groupe 1625"
+                    transform="translate(690.97 94.782)"
+                  >
+                    <path
+                      id="Tracé_2741"
+                      data-name="Tracé 2741"
+                      d="M699.24,123.673h0l-5.994-.1a.093.093,0,0,1-.092-.1.1.1,0,0,1,.1-.092l5.994.1a.094.094,0,0,1,0,.188Z"
+                      transform="translate(-693.153 -123.382)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1626"
+                    data-name="Groupe 1626"
+                    transform="translate(691.134 92.801)"
+                  >
+                    <path
+                      id="Tracé_2742"
+                      data-name="Tracé 2742"
+                      d="M696.068,120.159c-.845,0-1.7-.036-2.536-.108a.094.094,0,0,1-.086-.1.1.1,0,0,1,.1-.086c.981.084,1.977.119,2.959.1h0a.094.094,0,0,1,0,.188C696.362,120.158,696.215,120.159,696.068,120.159Z"
+                      transform="translate(-693.445 -119.864)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1627"
+                    data-name="Groupe 1627"
+                    transform="translate(730.282 60.065)"
+                  >
+                    <path
+                      id="Tracé_2743"
+                      data-name="Tracé 2743"
+                      d="M763.046,61.992a.094.094,0,0,1,0-.188c1.7-.03,3.43-.051,5.142-.063a.092.092,0,0,1,.095.093.093.093,0,0,1-.094.094c-1.711.012-3.44.033-5.139.063Z"
+                      transform="translate(-762.952 -61.741)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1628"
+                    data-name="Groupe 1628"
+                    transform="translate(733.38 61.906)"
+                  >
+                    <path
+                      id="Tracé_2744"
+                      data-name="Tracé 2744"
+                      d="M768.546,65.2a.094.094,0,0,1,0-.188l1.926,0h0a.094.094,0,0,1,0,.188l-1.925,0Z"
+                      transform="translate(-768.452 -65.01)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1629"
+                    data-name="Groupe 1629"
+                    transform="translate(698.882 86.19)"
+                    opacity="0.129"
+                  >
+                    <path
+                      id="Tracé_2745"
+                      data-name="Tracé 2745"
+                      d="M735.011,109.4l-.041.007a.352.352,0,0,0-.076.017c-.022.006-.045.01-.068.014-.108,0-.216-.017-.324-.02a10.027,10.027,0,0,0-1.325.079c-.8-.032-1.6-.115-2.407-.15-.786-.027-1.573.036-2.358.053-.722-.006-1.444-.051-2.167-.039-1.713.037-3.423.172-5.136.225-1.552.027-3.105-.117-4.657-.051-.863.012-1.724.076-2.587.073-.882,0-1.756-.13-2.636-.168a3.243,3.243,0,0,1-2.579-.794c-.261-.167-.481-.459-.8-.507a.579.579,0,0,0-.37,1.07c.576.4.533.437,1.156.844a4.654,4.654,0,0,0,1.244.444c1.077.161,2.172.145,3.258.214,1.321,0,2.641-.1,3.962-.123,1.283-.023,2.565,0,3.847.021,1.271-.037,2.541-.1,3.814-.083,1.944-.036,3.886.1,5.829.042.87-.029,1.738-.008,2.607.028a10.309,10.309,0,0,1,1.311-.079c.083,0,.166.009.248.014s.146.023.22.031c-.057-.006-.092-.006.025.006.009,0,.019,0,.028,0l.039.005-.026,0a1.021,1.021,0,0,0,.357-.048.582.582,0,0,0,.127-.02C736.387,110.17,735.855,109.031,735.011,109.4Z"
+                      transform="translate(-707.202 -108.126)"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h5 class="text-center pb-4 pt-3">
+              Je désire virer cet argent sur mon compte bancaire
+            </h5>
+            <form class="w-100">
+              <div
+                class="w-100 d-flex justify-content-center pb-3"
+                style="gap: 30px"
+              >
+                <input
+                  type="text"
+                  placeholder="IBAN"
+                  class="w-100 revendre_form"
+                />
+                <input
+                  type="text"
+                  placeholder="BIC"
+                  class="w-100 revendre_form"
+                />
+              </div>
+              <input type="checkbox" />
+              <label
+                style="
+                  color: rgba(79, 161, 182, 1);
+                  font-weight: 500;
+                  font-size: 12px;
+                  padding-left: 1%;
+                "
+              >
+                Je ne dispose pas de ces Informations actuellement. Je les
+                renseignerais plus tard
+              </label>
+            </form>
+          </div>
+          <div class="pt-5">
+            <div class="d-flex justify-content-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="55.851"
+                height="55.851"
+                viewBox="0 0 55.851 55.851"
+              >
+                <g
+                  id="Groupe_1226"
+                  data-name="Groupe 1226"
+                  transform="translate(-148.337 -296.884)"
+                >
+                  <g
+                    id="Groupe_1220"
+                    data-name="Groupe 1220"
+                    transform="translate(148.337 296.884)"
+                  >
+                    <circle
+                      id="Ellipse_42"
+                      data-name="Ellipse 42"
+                      cx="19.779"
+                      cy="19.779"
+                      r="19.779"
+                      transform="matrix(0.665, -0.747, 0.747, 0.665, 0, 29.54)"
+                      fill="#fff"
+                    />
+                    <path
+                      id="Tracé_1948"
+                      data-name="Tracé 1948"
+                      d="M177.838,346.572a20.187,20.187,0,1,1,20.187-20.187A20.21,20.21,0,0,1,177.838,346.572Zm0-39.558a19.371,19.371,0,1,0,19.371,19.371A19.393,19.393,0,0,0,177.838,307.014Z"
+                      transform="translate(-149.913 -298.459)"
+                    />
+                  </g>
+                  <g
+                    id="Groupe_1225"
+                    data-name="Groupe 1225"
+                    transform="translate(167.836 310.402)"
+                  >
+                    <g
+                      id="Groupe_1221"
+                      data-name="Groupe 1221"
+                      transform="translate(0.447 13.934)"
+                    >
+                      <path
+                        id="Tracé_1949"
+                        data-name="Tracé 1949"
+                        d="M181.322,349.265a18.157,18.157,0,0,0,4.893-.654,15.416,15.416,0,0,0,1.9-.654A87.048,87.048,0,0,0,185,334.778c-.644-2.018-1.662-4.3-3.728-4.774a4.215,4.215,0,0,0-3.826,1.372,10.708,10.708,0,0,0-2.073,3.677,50.868,50.868,0,0,0-3.032,12.46A25.311,25.311,0,0,0,181.322,349.265Z"
+                        transform="translate(-172.344 -329.926)"
+                        fill="#acd4f7"
+                      />
+                    </g>
+                    <g
+                      id="Groupe_1222"
+                      data-name="Groupe 1222"
+                      transform="translate(0 13.347)"
+                    >
+                      <path
+                        id="Tracé_1950"
+                        data-name="Tracé 1950"
+                        d="M188.323,348.184a.472.472,0,0,1-.415-.7,68.964,68.964,0,0,0-2.9-12.048c-.684-2.007-1.834-4.731-3.926-5.21a3.944,3.944,0,0,0-3.693,1.555,13.014,13.014,0,0,0-2.207,4.344,50.206,50.206,0,0,0-2.435,11.322.472.472,0,0,1-.94-.092,51.084,51.084,0,0,1,2.482-11.534,13.849,13.849,0,0,1,2.386-4.658,4.875,4.875,0,0,1,4.618-1.858c2.551.586,3.852,3.6,4.608,5.826a69.934,69.934,0,0,1,2.976,12.466.471.471,0,0,1-.263.493l-.1.047A.473.473,0,0,1,188.323,348.184Z"
+                        transform="translate(-171.806 -329.219)"
+                      />
+                    </g>
+                    <g
+                      id="Groupe_1223"
+                      data-name="Groupe 1223"
+                      transform="translate(4.541 4.524)"
+                      opacity="0.129"
+                    >
+                      <path
+                        id="Tracé_1951"
+                        data-name="Tracé 1951"
+                        d="M187.093,319.107a.838.838,0,0,0-1.489-.1c-.3.705.012,1.511-.073,2.254a5.57,5.57,0,0,1-.539,1.765c-.073.127.064-.064.112-.122-.06.075-.159.209-.22.295-.031.036-.061.072-.093.106-.5.5-1.028.979-1.549,1.459a5.382,5.382,0,0,1-1.515.682,5.791,5.791,0,0,1-.627.15l-.052,0c-.7-.031-1.41.042-2.113-.021l-.073-.009a1.476,1.476,0,0,0-1.087.065,1.048,1.048,0,0,0,.248,1.9,9.059,9.059,0,0,0,2.916.45,8.367,8.367,0,0,0,3.4-1.3C187.2,325.215,187.936,321.456,187.093,319.107Z"
+                        transform="translate(-177.272 -318.6)"
+                      />
+                    </g>
+                    <g
+                      id="Groupe_1224"
+                      data-name="Groupe 1224"
+                      transform="translate(2.054)"
+                    >
+                      <path
+                        id="Tracé_1952"
+                        data-name="Tracé 1952"
+                        d="M180.874,327.279a8.875,8.875,0,0,1-2.824-.466,4.847,4.847,0,0,1-3.341-3.457,7.027,7.027,0,0,1-.43-2.158,7.148,7.148,0,0,1,.493-2.647,8.774,8.774,0,0,1,2.748-3.922,6.641,6.641,0,0,1,4.7-1.444h0a5.948,5.948,0,0,1,4.2,2.889,8.655,8.655,0,0,1,1.314,4.737,7.182,7.182,0,0,1-.218,1.875,6.328,6.328,0,0,1-3.813,4.078A7.772,7.772,0,0,1,180.874,327.279Zm.764-13.181a5.8,5.8,0,0,0-3.534,1.273,7.83,7.83,0,0,0-2.445,3.5,6.221,6.221,0,0,0-.435,2.3,6.1,6.1,0,0,0,.376,1.869,3.921,3.921,0,0,0,2.752,2.875,7.434,7.434,0,0,0,5.013-.034,5.366,5.366,0,0,0,3.247-3.445,6.206,6.206,0,0,0,.186-1.628,7.72,7.72,0,0,0-1.161-4.223,5.206,5.206,0,0,0-3.508-2.465A4.829,4.829,0,0,0,181.638,314.1Z"
+                        transform="translate(-174.278 -313.154)"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h5 class="text-center pt-3 pb-4">
+              Je renseigne mes informations personnelles
+            </h5>
+            <form>
+              <div
+                class="d-flex w-100 justify-content-center pb-4"
+                style="gap: 30px"
+              >
+                <input
+                  type="date"
+                  placeholder="Date de naissance"
+                  class="w-100 revendre_form"
+                />
+                <select
+                  placeholder="Votre civilité"
+                  class="w-100 revendre_form"
+                >
+                  <option>XX</option>
+                </select>
+                <select
+                  placeholder="Votre nationalité"
+                  class="w-100 revendre_form"
+                >
+                  <option>XX</option>
+                </select>
+              </div>
+              <div class="d-flex w-100 pb-4" style="gap: 30px">
+                <input
+                  type="text"
+                  placeholder="Adresse"
+                  class="w-100 revendre_form"
+                />
+                <input
+                  type="text"
+                  placeholder="Code postal"
+                  class="w-100 revendre_form"
+                />
+                <input
+                  type="text"
+                  placeholder="Ville"
+                  class="w-100 revendre_form"
+                />
+              </div>
+              <div class="d-flex w-100 pb-4" style="gap: 30px">
+                <select placeholder="pays" class="w-100 revendre_form">
+                  <option>XX</option>
+                </select>
+                <input
+                  type="text"
+                  placeholder="Numéro de téléphone"
+                  class="w-100 revendre_form"
+                />
+                <input
+                  type="text"
+                  placeholder="Parcour"
+                  class="w-100 revendre_form"
+                />
+              </div>
+            </form>
+            <div class="d-flex pt-5" style="gap: 140px">
+              <p class="flex-2" style="flex: 2">
+                En cliquant sur le bouton FINALISER MA COMMANDE, j’accepte de
+                céder mon appareil conformément aux Conditions générales de
+                reprise et certifie que ces informations sont exactes et je
+                m’engage à déconnecter mon compte iCloud/Google pour recevoir
+                mon paiement même si mon appareil est non fonctionnel. Comment
+                faire ?
+              </p>
+              <button
+                class="btn flex-2 revendre_form_btn w-100"
+                style="flex: 1"
+              >
+                Finaliser ma commande
+              </button>
+            </div>
+          </div>
+          <!-- <div class="d-flex" style="gap: 20px">
+            <button class="btn button13 text-center text-uppercase">Oui</button>
+            <button class="btn button13 text-center text-uppercase">Non</button>
+          </div> -->
+        </div>
+
+        <div class="pt-4 pb-1">
+          <a href="#" class="text-center" style="color: #4b97b3"
+            >&#60; précédent</a
+          >
+        </div>
+      </main>
+      <!-- End of add maon content -->
+
+      <!-- Purple section -->
+      <section class="pourquoi_revendre_section">
+        <h2 class="text-center pb-3">Pourquoi revendre sur hexamobile ?</h2>
+        <div class="d-flex justify-content-around">
+          <div class="pourquoi_revendre_part1">
+            <ul class="list-unstyled class">
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white" class="me-3"
+                  >Meilleurs prix de rachat du marché</span
+                >
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white">Paiement rapide en 48h maximum</span>
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white"
+                  >Notre local de reconditionnement se trouve en France</span
+                >
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white"
+                  >Service client toujours disponible</span
+                >
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white">Envoi gratuit et sécurisé</span>
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white"
+                  >Tous les produits sont repris, même case</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="pourquoi_revendre_part2">
+            <div class="d-flex align-content-center justify-content-center">
+              <img src="public/assets/chamb.png" width="50" class="pb-3" />
+            </div>
+
+            <p class="text-black text-center p-0">
+              Déjà plus qu'un
+              <span class="text-white text-uppercase">million</span>nous font
+              confiance!
+            </p>
+            <p class="text-center text-white p-0">
+              Vous voulez en faire partie mais vous avez des questions ?
+            </p>
+            <div class="d-flex align-content-center justify-content-center">
+              <button class="text-uppercase btn button4">
+                Consulter notre faq
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of purple section -->
+      <!-- nos services -->
+      <div class="d-flex align-items-center pt-5 bg-white">
+        <div class="container-fluid">
+          <div class="row mb-5">
+            <div class="col-3">
+              <div class="d-flex justify-content-center">
+                <div class="prod-logo">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="41.951"
+                      height="34.283"
+                      viewBox="0 0 41.951 34.283"
+                    >
+                      <g
+                        id="delivery-svgrepo-com"
+                        transform="translate(1 -45.76)"
+                      >
+                        <g
+                          id="Groupe_291"
+                          data-name="Groupe 291"
+                          transform="translate(-1 45.76)"
+                        >
+                          <path
+                            id="Tracé_868"
+                            data-name="Tracé 868"
+                            d="M40.56,63.811c-1.259-1.679-2.519-1.679-5.6-.07l-3.079,1.9V49.258a2.1,2.1,0,0,0-2.1-2.1h-6.3v-.7a.661.661,0,0,0-.7-.7h-7a.661.661,0,0,0-.7.7v.7H8.8a2.1,2.1,0,0,0-2.1,2.1V61.852a17.42,17.42,0,0,0-2.8,1.466V61.852H-1V80.043H3.9v-2.1h9.1c1.4,0,2.869-.14,4.268-.21l9.1-1.4a4.127,4.127,0,0,0,.98-.14,4.592,4.592,0,0,0,2.309-1.189l10.565-8.4A2.074,2.074,0,0,0,40.56,63.811ZM16.491,47.159h5.6v5.527L19.71,50.8a.637.637,0,0,0-.84,0l-2.379,1.889V47.159Zm-8.4,2.1a.7.7,0,0,1,.7-.7h6.3v4.268a1.293,1.293,0,0,0,.77,1.189,1.333,1.333,0,0,0,.535.139,1.167,1.167,0,0,0,.865-.279l2.029-1.609,1.889,1.609a1.465,1.465,0,0,0,.89.26,1.438,1.438,0,0,0,.649-.12,1.293,1.293,0,0,0,.77-1.189V48.559h6.157a.7.7,0,0,1,.7.7V66.54l-1.469.91a10.881,10.881,0,0,1-4.408.63,2.146,2.146,0,0,0-.42-2.309,6.135,6.135,0,0,0-5.038-2.589H16.281a6.6,6.6,0,0,1-3.988-1.259,3.914,3.914,0,0,0-2.146-.756c-.122-.009-.246-.014-.372-.014a7.84,7.84,0,0,0-1.679.21ZM2.5,78.644H.4V63.251H2.5V78.644ZM39.37,65.63,28.735,73.886l-.07.07a2.428,2.428,0,0,1-1.609.84,2.871,2.871,0,0,1-.77.07l-9.235,1.4a26.377,26.377,0,0,1-4.058.28H3.9V65a16.681,16.681,0,0,1,3.527-1.914.83.83,0,0,0,.251-.045c1.679-.56,2.939-.56,3.778.07a8.108,8.108,0,0,0,4.828,1.539H19.01a4.516,4.516,0,0,1,3.918,2.029,1.189,1.189,0,0,1,.354.97l0,.01a.745.745,0,0,1-.358.268l-.011,0-.065.025-.06.022-.02.007a3.511,3.511,0,0,1-.386.1h0l-.146.027-.027,0-.136.021-.032,0q-.347.049-.785.076H14.043c-2.169,0-3.5,1.049-3.5,2.8a.7.7,0,1,0,1.4,0c0-.35,0-1.4,2.1-1.4h7.7c3.288.07,6.367,0,7.976-.84l6.017-3.708c2.939-1.469,3.218-1.119,3.778-.28A.659.659,0,0,1,39.37,65.63Z"
+                            transform="translate(1 -45.76)"
+                            fill="#4b97b3"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-color-2 text-center">Livraison gratuite</div>
+            </div>
+
+            <div class="col-3">
+              <div class="d-flex justify-content-center">
+                <div class="prod-logo">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36.7"
+                      height="27.036"
+                      viewBox="0 0 36.7 27.036"
+                    >
+                      <g
+                        id="Groupe_471"
+                        data-name="Groupe 471"
+                        transform="translate(-1171.761 -1821.108)"
+                      >
+                        <g
+                          id="Groupe_466"
+                          data-name="Groupe 466"
+                          transform="translate(1171.761 1821.108)"
+                        >
+                          <g id="Groupe_464" data-name="Groupe 464">
+                            <g id="Groupe_462" data-name="Groupe 462">
+                              <path
+                                id="Tracé_1350"
+                                data-name="Tracé 1350"
+                                d="M1192.806,1844.435H1174.3a2.542,2.542,0,0,1-2.539-2.539v-18.249a2.542,2.542,0,0,1,2.539-2.539h28.5a2.542,2.542,0,0,1,2.539,2.539v5.739a.593.593,0,1,1-1.186,0v-5.739a1.355,1.355,0,0,0-1.353-1.353h-28.5a1.355,1.355,0,0,0-1.353,1.353V1841.9a1.354,1.354,0,0,0,1.353,1.353h18.505a.593.593,0,0,1,0,1.187Z"
+                                transform="translate(-1171.761 -1821.108)"
+                                fill="#4b97b3"
+                              />
+                            </g>
+                            <g
+                              id="Groupe_463"
+                              data-name="Groupe 463"
+                              transform="translate(0 4.92)"
+                            >
+                              <path
+                                id="Tracé_1351"
+                                data-name="Tracé 1351"
+                                d="M1196.23,1828.894h-23.876a.59.59,0,0,1-.593-.591v-4.511a.592.592,0,0,1,.593-.593h32.392a.593.593,0,0,1,.593.593v2.516a.593.593,0,0,1-1.186,0v-1.922h-31.206v3.325h23.282a.592.592,0,1,1,0,1.184Z"
+                                transform="translate(-1171.761 -1823.199)"
+                                fill="#4b97b3"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            id="Groupe_465"
+                            data-name="Groupe 465"
+                            transform="translate(2.697 13.481)"
+                          >
+                            <path
+                              id="Tracé_1352"
+                              data-name="Tracé 1352"
+                              d="M1183.932,1828.02H1173.5a.592.592,0,1,1,0-1.183h10.432a.592.592,0,1,1,0,1.183Z"
+                              transform="translate(-1172.907 -1826.837)"
+                              fill="#4b97b3"
+                            />
+                          </g>
+                        </g>
+                        <g
+                          id="Groupe_470"
+                          data-name="Groupe 470"
+                          transform="translate(1194.54 1829.989)"
+                        >
+                          <g
+                            id="Groupe_467"
+                            data-name="Groupe 467"
+                            transform="translate(0 5.867)"
+                          >
+                            <path
+                              id="Tracé_1353"
+                              data-name="Tracé 1353"
+                              d="M1192.9,1839.664h-9a2.462,2.462,0,0,1-2.459-2.459v-7.37a2.462,2.462,0,0,1,2.459-2.459h9a2.463,2.463,0,0,1,2.459,2.459v7.37A2.463,2.463,0,0,1,1192.9,1839.664Zm-9-11.1a1.274,1.274,0,0,0-1.273,1.273v7.37a1.274,1.274,0,0,0,1.273,1.273h9a1.274,1.274,0,0,0,1.273-1.273v-7.37a1.274,1.274,0,0,0-1.273-1.273Z"
+                              transform="translate(-1181.441 -1827.375)"
+                              fill="#4b97b3"
+                            />
+                          </g>
+                          <g
+                            id="Groupe_468"
+                            data-name="Groupe 468"
+                            transform="translate(2.005)"
+                          >
+                            <path
+                              id="Tracé_1354"
+                              data-name="Tracé 1354"
+                              d="M1191.612,1831.935a.593.593,0,0,1-.593-.593v-1.5a3.77,3.77,0,0,0-7.54,0v1.5a.593.593,0,0,1-1.186,0v-1.5a4.956,4.956,0,1,1,9.912,0v1.5A.593.593,0,0,1,1191.612,1831.935Z"
+                              transform="translate(-1182.293 -1824.882)"
+                              fill="#4b97b3"
+                            />
+                          </g>
+                          <g
+                            id="Groupe_469"
+                            data-name="Groupe 469"
+                            transform="translate(4.695 8.968)"
+                          >
+                            <path
+                              id="Tracé_1355"
+                              data-name="Tracé 1355"
+                              d="M1185.7,1834.778a1.329,1.329,0,0,1-1.327-1.327v-.654a2.245,2.245,0,0,1-.939-1.838,2.266,2.266,0,1,1,3.593,1.838v.654A1.329,1.329,0,0,1,1185.7,1834.778Zm0-4.9a1.08,1.08,0,0,0-.473,2.052.593.593,0,0,1,.332.532v.988c0,.153.282.153.282,0v-.988a.594.594,0,0,1,.332-.532,1.08,1.08,0,0,0-.473-2.052Z"
+                              transform="translate(-1183.436 -1828.693)"
+                              fill="#4b97b3"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="text-color-2 text-center">Paiement 100% sécurisé</div>
+            </div>
+
+            <div class="col-3">
+              <div class="d-flex justify-content-center">
+                <div class="prod-logo">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="33.534"
+                      height="28.649"
+                      viewBox="0 0 33.534 28.649"
+                    >
+                      <g
+                        id="Groupe_477"
+                        data-name="Groupe 477"
+                        transform="translate(-730.252 -1249.498)"
+                      >
+                        <g
+                          id="Groupe_472"
+                          data-name="Groupe 472"
+                          transform="translate(730.252 1263.412)"
+                        >
+                          <path
+                            id="Tracé_1356"
+                            data-name="Tracé 1356"
+                            d="M732.96,1267.126a2.712,2.712,0,0,1-2.708-2.708v-5.692a2.709,2.709,0,0,1,5.418,0v5.692A2.712,2.712,0,0,1,732.96,1267.126Zm0-10.043a1.647,1.647,0,0,0-1.643,1.643v5.692a1.643,1.643,0,1,0,3.286,0v-5.692A1.645,1.645,0,0,0,732.96,1257.083Z"
+                            transform="translate(-730.252 -1256.018)"
+                            fill="#4b97b3"
+                          />
+                        </g>
+                        <g
+                          id="Groupe_473"
+                          data-name="Groupe 473"
+                          transform="translate(758.37 1263.412)"
+                        >
+                          <path
+                            id="Tracé_1357"
+                            data-name="Tracé 1357"
+                            d="M746.136,1267.126a2.71,2.71,0,0,1-2.708-2.708v-5.692a2.708,2.708,0,0,1,5.416,0v5.692A2.712,2.712,0,0,1,746.136,1267.126Zm0-10.043a1.645,1.645,0,0,0-1.643,1.643v5.692a1.643,1.643,0,1,0,3.286,0v-5.692A1.647,1.647,0,0,0,746.136,1257.083Z"
+                            transform="translate(-743.428 -1256.018)"
+                            fill="#4b97b3"
+                          />
+                        </g>
+                        <g
+                          id="Groupe_474"
+                          data-name="Groupe 474"
+                          transform="translate(732.309 1249.498)"
+                        >
+                          <path
+                            id="Tracé_1358"
+                            data-name="Tracé 1358"
+                            d="M760.1,1264.417a.532.532,0,0,1-.531-.533,13.65,13.65,0,0,0-27.292,0,.532.532,0,1,1-1.065,0,14.714,14.714,0,0,1,29.422,0A.534.534,0,0,1,760.1,1264.417Z"
+                            transform="translate(-731.216 -1249.498)"
+                            fill="#4b97b3"
+                          />
+                        </g>
+                        <g
+                          id="Groupe_475"
+                          data-name="Groupe 475"
+                          transform="translate(751.507 1273.593)"
+                        >
+                          <path
+                            id="Tracé_1359"
+                            data-name="Tracé 1359"
+                            d="M748.605,1263.252h-7.86a.534.534,0,1,1,0-1.067h7.86a.894.894,0,0,0,.811-.862.533.533,0,1,1,1.067,0A1.956,1.956,0,0,1,748.605,1263.252Z"
+                            transform="translate(-740.212 -1260.789)"
+                            fill="#4b97b3"
+                          />
+                        </g>
+                        <g
+                          id="Groupe_476"
+                          data-name="Groupe 476"
+                          transform="translate(742.971 1272.897)"
+                        >
+                          <path
+                            id="Tracé_1360"
+                            data-name="Tracé 1360"
+                            d="M743.293,1265.713h-4.727a2.355,2.355,0,0,1-2.354-2.352v-.544a2.357,2.357,0,0,1,2.354-2.354h4.727a2.357,2.357,0,0,1,2.354,2.354v.544A2.355,2.355,0,0,1,743.293,1265.713Zm-4.727-4.185a1.289,1.289,0,0,0-1.287,1.289v.544a1.288,1.288,0,0,0,1.287,1.287h4.727a1.29,1.29,0,0,0,1.289-1.287v-.544a1.291,1.291,0,0,0-1.289-1.289Z"
+                            transform="translate(-736.212 -1260.463)"
+                            fill="#4b97b3"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="text-color-2 text-center">
+                Assistance dédiée 24/24 & 7/7
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="d-flex justify-content-center">
+                <div class="prod-logo">
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="33.331"
+                      height="40.947"
+                      viewBox="0 0 33.331 40.947"
+                    >
+                      <g
+                        id="Groupe_461"
+                        data-name="Groupe 461"
+                        transform="translate(-2531.348 -991.22)"
+                      >
+                        <g
+                          id="Groupe_286"
+                          data-name="Groupe 286"
+                          transform="translate(2541.612 1002.537)"
+                        >
+                          <g id="Groupe_285" data-name="Groupe 285">
+                            <path
+                              id="Tracé_864"
+                              data-name="Tracé 864"
+                              d="M2541.957,1011.265a.627.627,0,0,1-.436-.181l-5.846-5.846a.618.618,0,1,1,.874-.874l5.408,5.41,13.8-13.8a.617.617,0,0,1,.874.871l-14.236,14.239A.628.628,0,0,1,2541.957,1011.265Z"
+                              transform="translate(-2535.495 -995.792)"
+                              fill="#4b97b3"
+                            />
+                          </g>
+                        </g>
+                        <g
+                          id="Groupe_287"
+                          data-name="Groupe 287"
+                          transform="translate(2531.348 991.22)"
+                        >
+                          <path
+                            id="Tracé_865"
+                            data-name="Tracé 865"
+                            d="M2548.012,1032.167a.6.6,0,0,1-.272-.064c-15.076-7.4-16.34-14.707-16.384-15.013a.582.582,0,0,1-.008-.092V999.047a.619.619,0,0,1,.616-.619c6.91,0,15.573-7,15.66-7.069a.614.614,0,0,1,.779,0,44.8,44.8,0,0,0,7.274,4.648.618.618,0,1,1-.554,1.1,45.926,45.926,0,0,1-7.108-4.487c-1.765,1.369-9.014,6.693-15.432,7.022v17.3c.114.537,1.8,7.153,15.43,13.92,13.7-6.8,15.32-13.368,15.432-13.917v-6.67a.617.617,0,0,1,1.235,0V1017a.645.645,0,0,1-.007.092c-.047.307-1.31,7.613-16.388,15.013A.581.581,0,0,1,2548.012,1032.167Z"
+                            transform="translate(-2531.348 -991.22)"
+                            fill="#4b97b3"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="text-color-2 text-center">Garantie 2 ans</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of nos services -->
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container-fluid col-10">
+          <div class="row div-1 d-flex align-items-center">
+            <div class="col-lg-5 mt-1 col-md-12">
+              <img src="./public/assets/logo.png" width="230px" alt="logo-1" />
+            </div>
+            <div class="col-lg-4 col-md-12 text-white">
+              <div>Newsletter</div>
+              <p class="p1">
+                Inscrivez-vous maintenant pour obtenir des mises à jour sur les
+                promotions et les coupons.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-12 mt-3">
+              <div class="newsletter-search nav-colors">
+                <div>
+                  <input
+                    class="search-input me-2 nav-colors"
+                    type="search"
+                    placeholder="Que cherchez vous ?"
+                    aria-label="Search"
+                  />
+                  <span class="search-icon"
+                    ><i class="fa-solid fa-paper-plane nav-colors"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid col-10 mt-4">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 mb-5">
+              <div class="text-white mb-2">Téléphone</div>
+              <div class="text-color-3 mb-2">0 820 690 450</div>
+              <div class="text-white mb-3">
+                Du Lundi au vendredi de 09h00 à 12h00 et <br />
+                de 13h00 à 17h00
+              </div>
+              <div class="text-white">
+                <span style="font-size: 13px">Email</span> <br />
+                <p class="p1">
+                  Pour toutes demandes merci de nous contacter directement via
+                  le bouton « assistance » en bas à gauche de l’écran. <br />
+                  Indiquez votre référence de commande en remplissant le
+                  formulaire.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-5">
+              <div class="text-white mb-2">Compte</div>
+              <div class="text-white mb-1">
+                <p class="p1 p-0">Mon compte</p>
+                <p class="p1">Historique des commandes</p>
+              </div>
+              <div class="text-white">Qui sommes-nous</div>
+
+              <div class="text-white">Blog</div>
+
+              <div class="text-white">
+                <span class="me-3"> Suivez-nous</span>
+                <i class="fa-brands fa-facebook fa-lg"></i>
+                <i class="fa-brands fa-instagram fa-lg"></i>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+              <div class="text-white mb-2">Informations</div>
+              <div class="text-white">
+                <p class="p1">Mentions légales</p>
+                <p class="p1">
+                  Règlement général sur la protection des données
+                </p>
+                <p class="p1">Conditions générales de vente (CGV)</p>
+                <p class="p1">Conditions générales d’achat et de reprise</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

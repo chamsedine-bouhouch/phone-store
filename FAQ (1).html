@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./public/style.css"
+      type="text/css"
+      media="all"
     />
     <link
       rel="stylesheet"
@@ -31,140 +34,140 @@
       rel="stylesheet"
     />
     <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
       rel="stylesheet"
-      href="./public/style.css"
-      type="text/css"
-      media="all"
     />
-
-    <link
-      rel="stylesheet"
-      href="./public/style-login.css"
-      type="text/css"
-      media="all"
-    />
-    <title>panier</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>FAQ</title>
     <style>
-      .titre {
-        font-size: 20px;
-        font-weight: 400;
-        font-family: "Krona one";
-      }
-
-      .titre span {
-        color: #3c66ac;
-      }
-
-      .panier {
-        position: relative;
-        background-color: white;
-        border-radius: 10px;
-      }
-
-      .delete {
-        position: absolute;
-        top: 0;
-        right: 5%;
-        background-color: transparent;
-
-        text-align: center;
-
-        font-size: 10px;
-      }
-
-      .notif p {
-        margin: 5px 0px;
-      }
-
-      .garantit {
-        color: #3c66ac;
-      }
-
-      .bouton-commander {
-        color: white;
-        background-color: #3c66ac;
-        font-family: "Krona one";
-        font-size: 12px;
-        padding: 1rem 1rem;
-        border-radius: 50px;
-        border: none;
-      }
-
-      .bottom {
-        position: fixed;
-        transform: translateZ(-42px);
-        transform: translateY(-15rem);
-      }
-
-      .text-desc {
-        font-family: "Krona one";
-        text-transform: uppercase;
-        font-size: 22px;
-        line-height: 35px;
-      }
-     .step-title3 {
-        margin-left: 0;
-        font-size: 12px;
-        color: rgba(79, 161, 182, 1);
-        margin-top: -1rem;
-      }
-
-      .ajouter {
-        position: absolute;
-        top: 30%;
-        font-size: smaller;
-      }
-
-      .ajouter a {
-        text-decoration: none;
-        font-weight: 600;
-        font-family: "Krona one";
-        font-size: 10px;
-        text-decoration: underline;
-      }
-      .bouton-commander {
+      .top_intoduction {
+        height: 20vh;
         width: 100%;
+        background-color: #00a7bc;
+        /* margin-bottom: 5%; */
+      }
+      .top_intoduction_part1 {
+        flex: 4;
+      }
+      .top_intoduction_part2 {
+        flex: 2;
+      }
+      .top_intoduction_part3 {
+        flex: 4;
+      }
+      .button4 {
+        font-size: 14px;
+        margin-top: 15px;
+        font-family: "Krona one";
+        background-color: transparent;
         color: white;
-        background-color: #4B97B3;
-        font-family: 'Krona one';
-        font-size: 12px;
-        padding: 1rem 3rem;
-        border-radius: 50px;
-        border: none;
+        padding: 12px 22px;
+        border: 1px solid #fff;
+        border-radius: 25px;
+        display: block;
+        height: 50px;
+        /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+          0 3px 10px 0 rgba(0, 0, 0, 0.11); */
       }
-
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      .button5 {
+        font-size: 14px;
+        margin-top: 15px;
+        font-family: "Krona one";
+        background-color: transparent;
+        color: black;
+        padding: 12px 22px;
+        border: 1px solid black;
+        border-radius: 25px;
+        display: block;
+        height: 50px;
       }
-
-      .total {
-        color: white;
-        padding: auto;
-        margin: 1rem 0;
+      .how_to_use {
+        padding: 5% 5% 3% 5%;
+        background-color: #f5f6f8;
       }
-      .inp2 {
-        border: 2px solid black;
-      }
-      .inp2::placeholder {
-        white-space: nowrap;
-        line-height: 61px;
-        text-align: left;
-        font-family: "Lato";
-        font-style: normal;
+      .description_title {
+        color: black;
         font-weight: bold;
-        font-size: 11px;
-        color: rgba(75, 151, 179, 1);
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        border: none;
+        font-size: 15px;
       }
-      .delivery_adresse_form {
-        padding: 0% 6% 5% 6%;
+      .vertical_alignement_section {
+        padding: 5% 20% 5% 20%;
+      }
+      .vertical_alignement_title {
+        color: #0275d8;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      .pourquoi_revendre_section {
+        background-image: url(./public/assets/comment\ ca\ marche.png);
+        padding: 3% 5% 4% 6%;
+      }
+      /* .pourquoi_revendre_part1 {
+        list-style-type: none;
+      } */
+      .pourquoi_revendre_part2 {
+        padding: 5% 0 0 0;
+      }
+      .FAQ_container {
+        padding: 2% 20% 10% 20%;
+        background-color: #f5f6f8;
+        
+      }
+      /* .questions_container{
+        padding:
+      } */
+      .button7 {
+        background-color: #fff !important;
+        border: 1px solid rgba(79, 161, 182, 1);
+        display: block;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 2% 4% 2% 4%;
+      }
+      .button7_active{
+        background-color: #fff !important;
+        border: 1px solid rgba(79, 161, 182, 1);
+        display: block;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 2% 4% 2% 4%;
+        color: rgba(79, 161, 182, 1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      .question {
+        background-color: #fff !important;
+        padding: 1% 3% 1% 3%;
+        margin-bottom: 3%;
+        border-radius: 50px;
+        box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+      }
+      /* .panel{
+        display: none;
+        overflow: hidden;
+      } */
+      .accordion_content{
+        position: relative;
+        font-size: 12px;
+        text-align: justify;
+        line-height: 25px;
+        height: 0;
+        overflow: hidden;
+        transition: all 1s;
+      }
+      .accordion_btn{
+        margin-top: 1%;
+        text-align: left;
+        width: 100%;
+        background-color: transparent;
+        font-size: 18px;
+        color: #4B97B3;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        cursor: pointer;
       }
     </style>
   </head>
-
   <body>
     <div class="page-container">
       <header>
@@ -264,7 +267,7 @@
                   <div class="custom-btn">
                     <a
                       class="nav-link active text-white nav-colors"
-                      style="font-size: 12px; font-weight: 300"
+                      style="font-weight: 300"
                       aria-current="page"
                       href="#"
                       >VENTES FLASH</a
@@ -343,9 +346,7 @@
                         >Iphone 12s pro</a
                       >
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
+                    <li></li>
                     <li>
                       <a class="dropdown-item fw-lighter fs-6" href="#"
                         >Iphone 12s
@@ -357,7 +358,7 @@
                   <a
                     class="nav-link active dropdown-toggle nav-colors"
                     href="#"
-                    id="navbarDropdown2"
+                    id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -366,7 +367,7 @@
                   </a>
                   <ul
                     class="dropdown-menu nav-colors"
-                    aria-labelledby="navbarDropdown2"
+                    aria-labelledby="navbarDropdown"
                   >
                     <li><a class="dropdown-item" href="#">Samsung A02</a></li>
                     <li><a class="dropdown-item" href="#">Samsung A12</a></li>
@@ -384,7 +385,7 @@
                   <a
                     class="nav-link active dropdown-toggle nav-colors"
                     href="#"
-                    id="navbarDropdown1"
+                    id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -395,7 +396,7 @@
                   </a>
                   <ul
                     class="dropdown-menu nav-colors"
-                    aria-labelledby="navbarDropdown1"
+                    aria-labelledby="navbarDropdown"
                   >
                     <li><a class="dropdown-item" href="#">Infinix </a></li>
                     <li><a class="dropdown-item" href="#">Xiaomi</a></li>
@@ -427,186 +428,258 @@
       <nav>
         <ul class="breadcrumb">
           <li><a href="#" class="text-black">Accueil</a></li>
-          <li><a href="#">Mon Panier</a></li>
+          <li><a href="#" class="text-black">Espace Revendre</a></li>
+          <li><a href="#">FAQ</a></li>
         </ul>
       </nav>
-      <div
-        class="content-page-info pt-0"
-        style="background-color: #f5f6f8; z-index: 1"
-        media="(max-width: 600px)"
-      >
-        <div class="align-items-start flex-column headin-form2">
-          <img src="./public/assets/panier3.png" width="70%" />
-          <h3 class="step-title3">Adresse</h3>
+      <section class="top_intoduction d-flex">
+        <div
+          class="top_intoduction_part1 d-flex align-items-center justify-content-evenly mb-3"
+        >
+          <button class="btn button4">Revendre</button>
+          <button class="btn button5">Comment ca marche ?</button>
+          <button class="btn button4">FAQ</button>
         </div>
-        <main class="container d-flex mt-3">
-          <!-- left side cards -->
-          <div class="pb-2 h-100 w-75 "style="background-color: white">
-          <div class="w-100 mr-2 flex-6 bg-white" style="border-radius: 10px">
-            <h3 class="text-center text-black pt-5 pb-3">
-              Votre adresse de livraison
+        <div class="top_intoduction_part2">
+          <img
+            src="public/assets/women-bg.PNG"
+            style="height: 100%; width: 100%; object-fit: contain"
+          />
+        </div>
+        <div
+          class="top_intoduction_part3 d-flex align-items-end justify-content-around"
+        >
+          <div>
+            <div class="d-flex justify-content-center">
+              <img src="public/assets/head.png" width="60" />
+            </div>
+            <p class="text-white">
+              Rachat a prix
+              <span class="text-center text-black text-uppercase"
+                >imbattables</span
+              >
+            </p>
+          </div>
+          <div>
+            <div class="d-flex justify-content-center">
+              <span class="text-white" style="font-size: 25px">522</span>
+            </div>
+            <p class="text-white">
+              Produits revendus sur
+              <span class="text-center text-black text-uppercase"
+                >Hexamobile.fr</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Main content -->
+      <main class="FAQ_container" style="background-color: #f5f6f8">
+        <div class="d-flex align-content-center justify-content-center w-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54.74" height="61.847" viewBox="0 0 54.74 61.847">
+            <g id="Groupe_1656" data-name="Groupe 1656" transform="translate(-615.358 -20.453)">
+              <g id="Groupe_1654" data-name="Groupe 1654" transform="translate(615.358 20.453)">
+                <g id="Groupe_1650" data-name="Groupe 1650">
+                  <path id="Tracé_2768" data-name="Tracé 2768" d="M662.68,66.291c8-9.33,9.454-25.59,1.767-35.182s-20.3-12.685-31.8-8.34c-11.8,4.458-16.914,12.049-16.914,22.97,0,11.3,4.225,20.712,18.5,24.949a37.961,37.961,0,0,0,15.715.8,8.953,8.953,0,0,1,3.613-.014c1.549.441,2.691,1.716,3.812,2.874,2.776,2.867,5.295,6.4,9.4,7.347C668.656,82.128,662.537,72.432,662.68,66.291Z" transform="translate(-615.252 -20.343)" fill="#fff"/>
+                  <path id="Tracé_2769" data-name="Tracé 2769" d="M666.993,82.3a.957.957,0,0,1-.222-.027c-3.516-.811-5.88-3.4-8.165-5.9-.482-.527-.98-1.072-1.474-1.581l-.239-.249a5.9,5.9,0,0,0-6.6-2.492l-.18.023A38.078,38.078,0,0,1,634.2,71.26c-6.9-2.048-11.762-5.326-14.867-10.02-2.676-4.047-3.976-9.08-3.976-15.39,0-11.38,5.635-19.04,17.226-23.42,11.908-4.5,24.6-1.168,32.344,8.49,3.729,4.651,5.542,11.051,5.106,18.019a30.724,30.724,0,0,1-6.769,17.643c-.014,3.294,1.771,7.637,3.081,10.823,1.245,3.03,1.652,4.1,1.186,4.653A.689.689,0,0,1,666.993,82.3ZM652.216,70.917a5.734,5.734,0,0,1,1.58.2,8.9,8.9,0,0,1,3.79,2.756l.237.246c.5.519,1.006,1.07,1.492,1.6,2.132,2.332,4.335,4.742,7.43,5.551a26.251,26.251,0,0,0-1.288-3.505c-1.365-3.319-3.235-7.866-3.153-11.381a.483.483,0,0,1,.117-.3c8.255-9.625,9.06-25.455,1.756-34.567-7.474-9.326-19.742-12.542-31.254-8.191-11.327,4.28-16.6,11.436-16.6,22.519,0,13.03,5.769,20.812,18.155,24.488a37.124,37.124,0,0,0,15.516.782l.178-.023A15.764,15.764,0,0,1,652.216,70.917Z" transform="translate(-615.358 -20.453)"/>
+                </g>
+                <g id="Groupe_1653" data-name="Groupe 1653" transform="translate(17.348 9.596)">
+                  <g id="Groupe_1651" data-name="Groupe 1651">
+                    <path id="Tracé_2770" data-name="Tracé 2770" d="M633.4,38.841a4.655,4.655,0,0,1-4.122-4.088,5.741,5.741,0,0,1,2.878-5.142,9.9,9.9,0,0,1,6.3-1.225,10.1,10.1,0,0,1,7.058,3.78,6.275,6.275,0,0,1,.16,7.317c-1.417,1.907-4.1,3.083-4.654,5.34-.394,1.594.328,3.57-.944,4.71a2.905,2.905,0,0,1-3.739-.33,4.755,4.755,0,0,1-1.175-3.6,5.977,5.977,0,0,1,.436-2.191c1.233-2.855,5.4-4.423,5.463-7.5a3.543,3.543,0,0,0-2.6-3.321c-1.213-.345-2.833.141-3.069,1.293-.16.78.351,1.535.464,2.322C636,37.267,635.34,38.383,633.4,38.841Z" transform="translate(-628.777 -27.828)" fill="#acd4f7"/>
+                    <path id="Tracé_2771" data-name="Tracé 2771" d="M638.635,50.666A3.713,3.713,0,0,1,636.1,49.65a5.167,5.167,0,0,1-1.319-3.958,6.386,6.386,0,0,1,.476-2.365,10.654,10.654,0,0,1,2.774-3.357c1.345-1.24,2.617-2.413,2.649-3.96a3.059,3.059,0,0,0-2.252-2.847,2.573,2.573,0,0,0-1.921.228,1.111,1.111,0,0,0-.546.7,2.43,2.43,0,0,0,.209,1.194,5.339,5.339,0,0,1,.26.961c.169,1.171-.482,2.619-2.815,3.169a.5.5,0,0,1-.151.012A5.119,5.119,0,0,1,628.9,34.9a6.2,6.2,0,0,1,3.1-5.591,10.338,10.338,0,0,1,6.606-1.3A10.582,10.582,0,0,1,646,31.991a6.748,6.748,0,0,1,.156,7.886,13.144,13.144,0,0,1-2.078,2.059c-1.125.962-2.188,1.871-2.495,3.109a7.139,7.139,0,0,0-.123,1.691A4.009,4.009,0,0,1,640.5,50,2.748,2.748,0,0,1,638.635,50.666Zm-.884-18.555a3.42,3.42,0,0,1,.939.127,4.042,4.042,0,0,1,2.951,3.793c-.041,1.955-1.524,3.323-2.958,4.647a9.936,9.936,0,0,0-2.545,3.03,5.483,5.483,0,0,0-.4,2.015,4.356,4.356,0,0,0,1.034,3.244,2.439,2.439,0,0,0,3.078.313c.655-.586.652-1.492.648-2.541a7.97,7.97,0,0,1,.151-1.925c.38-1.538,1.612-2.591,2.8-3.609a12.444,12.444,0,0,0,1.93-1.9,5.778,5.778,0,0,0-.165-6.749A9.606,9.606,0,0,0,638.5,28.97a9.369,9.369,0,0,0-5.987,1.154,5.236,5.236,0,0,0-2.654,4.692,4.192,4.192,0,0,0,3.609,3.644c1.417-.355,2.148-1.109,2.009-2.078a4.591,4.591,0,0,0-.219-.789,3.217,3.217,0,0,1-.241-1.7,2.031,2.031,0,0,1,.99-1.329A3.419,3.419,0,0,1,637.751,32.112Z" transform="translate(-628.883 -27.934)"/>
+                  </g>
+                  <g id="Groupe_1652" data-name="Groupe 1652" transform="translate(5.527 24.689)">
+                    <path id="Tracé_2772" data-name="Tracé 2772" d="M638.058,47.729a3.72,3.72,0,0,0-3.148.434,3,3,0,0,0-1.335,2.656,3.2,3.2,0,0,0,2.89,2.747,3.34,3.34,0,0,0,3.436-2.147A2.994,2.994,0,0,0,638.058,47.729Z" transform="translate(-633.086 -47.077)" fill="#acd4f7"/>
+                    <path id="Tracé_2773" data-name="Tracé 2773" d="M636.871,54.167c-.114,0-.23-.005-.345-.015a3.672,3.672,0,0,1-3.325-3.189,3.5,3.5,0,0,1,1.543-3.091,4.189,4.189,0,0,1,3.566-.5h0a3.47,3.47,0,0,1,2.156,4.29A3.792,3.792,0,0,1,636.871,54.167Zm.185-6.019a3.172,3.172,0,0,0-1.769.518,2.523,2.523,0,0,0-1.126,2.222,2.724,2.724,0,0,0,2.455,2.306,2.852,2.852,0,0,0,2.931-1.81,2.525,2.525,0,0,0-1.529-3.091h0A3.19,3.19,0,0,0,637.055,48.148Z" transform="translate(-633.192 -47.183)"/>
+                  </g>
+                </g>
+              </g>
+              <g id="Groupe_1655" data-name="Groupe 1655" transform="translate(615.76 51.276)" opacity="0.129">
+                <path id="Tracé_2774" data-name="Tracé 2774" d="M616.076,44.71c.793-.594,1.656.071,1.727.956.259,1.04.54,2.075.879,3.092a11.835,11.835,0,0,0,1.806,3.42,30.42,30.42,0,0,0,5.842,5.2,20.482,20.482,0,0,0,4.026,2.347,32.326,32.326,0,0,0,11.237,2.311c3.411.122,6.833-.469,10.232-.091,2.168.333,3.817,1.942,5.423,3.309,1.433,1.356,3.01,2.542,4.442,3.9,1.569,1.548,3.168,2.15,5.208,3.771a1.214,1.214,0,0,1-1.567,1.787,40.114,40.114,0,0,1-5.138-3.654c-2.683-2.313-4.7-4.578-7.211-6.021-1.424-1-6.125-.149-9.628-.244-6.227-.1-12.756-1.354-17.845-5.131a26.625,26.625,0,0,1-6.658-6.2,19.394,19.394,0,0,1-1.5-2.349,14.365,14.365,0,0,1-1.106-3.059c-.187-.713-.353-1.433-.513-2.154A1.045,1.045,0,0,1,616.076,44.71Z" transform="translate(-615.671 -44.484)"/>
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+        <div class="d-flex justify-content-evenly pt-3 pb-5">
+          <button class="btn text-uppercase button7">tous</button>
+          <button class="btn text-uppercase button7_active">estimation</button>
+          <button class="btn text-uppercase button7">envoi</button>
+          <button class="btn text-uppercase button7">offre</button>
+        </div>
+        <div class="question">
+            <h3>
+              <button class="btn accordion_btn text-left"><i class="fa-solid fa-angle-down me-1 toogle_icon"></i
+                ><span>Comment fonctionne la reprise ?</span></button>
             </h3>
-            <div class="delivery_adresse_form pt-5">
-              <form method="POST">
-                <!-- <div class="alert alert-danger">
-                                      <span></span>
-                                  </div> -->
-                <div class="d-flex" style="gap: 50px">
-                  <div class="form-group w-100">
-                    <input
-                      type="text"
-                      placeholder="Société"
-                      class="form-control mb-4 inp2"
-                      name="login"
-                      style="border: 2px solid black"
-                      id=""
-                    />
-                    <!-- <span class="text-danger"> </span> -->
-                  </div>
-                  <div class="form-group w-100">
-                    <input
-                      type="text"
-                      placeholder="Pays"
-                      class="form-control mb-4 inp2"
-                      name="login"
-                      style="border: 2px solid black"
-                      id=""
-                    />
-                  </div>
-                </div>
-                <div class="d-flex" style="gap: 50px">
-                  <div class="form-group w-100">
-                    <input
-                      type="text"
-                      placeholder="Numéro et nom de société"
-                      class="form-control mb-4 inp2"
-                      name="login"
-                      style="border: 2px solid black"
-                      id=""
-                    />
-                    <!-- <span class="text-danger"> </span> -->
-                  </div>
-                  <div class="form-group w-100">
-                    <input
-                      type="text"
-                      placeholder="Complément d'adresse"
-                      class="form-control mb-4 inp2"
-                      name="login"
-                      style="border: 2px solid black"
-                      id=""
-                    />
-                  </div>
-                </div>
-                <div class="d-flex" style="gap: 50px">
-                  <div class="form-group w-100">
-                    <input
-                      type="text"
-                      placeholder="Code postal"
-                      class="form-control mb-4 inp2"
-                      name="login"
-                      style="border: 2px solid black"
-                      id=""
-                    />
-                    <!-- <span class="text-danger"> </span> -->
-                  </div>
-                  <div class="form-group w-100">
-                    <input
-                      type="text"
-                      placeholder="Ville"
-                      class="form-control mb-4 inp2"
-                      name="login"
-                      style="border: 2px solid black"
-                      id=""
-                    />
-                  </div>
-                </div>
-                <div class="d-flex" style="gap: 50px">
-                  <div class="form-group w-100">
-                    <input
-                      type="text"
-                      placeholder="Numéro de téléphone"
-                      class="form-control mb-4 inp2"
-                      name="login"
-                      style="border: 2px solid black"
-                      id=""
-                    />
-                    <!-- <span class="text-danger"> </span> -->
-                  </div>
-                  <div
-                    class="form-group w-100 d-flex align-items-center justify-content-start mb-4"
-                  >
-                    <input type="checkbox" style="margin-right: 5px" name="#" />
-                    <span class="sous-card-text"
-                      >Même adresse de facturation</span
-                    >
-                  </div>
-                </div>
-              </form>
+            <p class="accordion_content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              voluptatem delectus nostrum minima facere aperiam voluptate esse
+              rerum, consequuntur veritatis officiis possimus, adipisci, maiores
+              dolore necessitatibus hic magnam corporis. Eum. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Fugit minus quis possimus
+              odio tenetur aperiam fuga doloribus, voluptatum suscipit? Minima
+              dolore deleniti reiciendis ipsum hic ipsam quisquam laborum, ipsa
+              esse.
+            </p>
+          </div>
+          <div class="question">
+            <h3>
+              <button class="btn accordion_btn"><i class="fa-solid fa-angle-down me-1 toogle_icon"></i
+                ><span
+                >Comment est défini le prix de reprise des différentes produits
+                ?</span
+              ></button>
+            </h3>
+            <p class="accordion_content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              voluptatem delectus nostrum minima facere aperiam voluptate esse
+              rerum, consequuntur veritatis officiis possimus, adipisci, maiores
+              dolore necessitatibus hic magnam corporis. Eum. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Fugit minus quis possimus
+              odio tenetur aperiam fuga doloribus, voluptatum suscipit? Minima
+              dolore deleniti reiciendis ipsum hic ipsam quisquam laborum, ipsa
+              esse.
+            </p>
+          </div>
+          <div class="question">
+            <h3>
+              <button class="btn accordion_btn"><i class="fa-solid fa-angle-down me-1 toogle_icon"></i
+                ><span>Rachetez-vous les produits endommagés ou cassées ?</span></button>
+            </h3>
+            <p class="accordion_content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              voluptatem delectus nostrum minima facere aperiam voluptate esse
+              rerum, consequuntur veritatis officiis possimus, adipisci, maiores
+              dolore necessitatibus hic magnam corporis. Eum. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Fugit minus quis possimus
+              odio tenetur aperiam fuga doloribus, voluptatum suscipit? Minima
+              dolore deleniti reiciendis ipsum hic ipsam quisquam laborum, ipsa
+              esse.
+            </p>
+          </div>
+          <div class="question">
+            <h3>
+              <button class="btn accordion_btn"><i class="fa-solid fa-angle-down me-1 toogle_icon"></i
+                ><span
+                >Rachetez-vous les produits quie ne fonctionnent plus?</span
+              ></button>
+              
+            </h3>
+            <p class="accordion_content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              voluptatem delectus nostrum minima facere aperiam voluptate esse
+              rerum, consequuntur veritatis officiis possimus, adipisci, maiores
+              dolore necessitatibus hic magnam corporis. Eum. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Fugit minus quis possimus
+              odio tenetur aperiam fuga doloribus, voluptatum suscipit? Minima
+              dolore deleniti reiciendis ipsum hic ipsam quisquam laborum, ipsa
+              esse.
+            </p>
+          </div>
+          <div class="question">
+            <h3 class="text-left">
+              <button class="btn accordion_btn text-left"><i class="fa-solid fa-angle-down me-1 toogle_icon"></i
+                ><span>Comment déconnecter mon compte iCloud ou Google ?</span></button>
+            </h3>
+            <p class="accordion_content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              voluptatem delectus nostrum minima facere aperiam voluptate esse
+              rerum, consequuntur veritatis officiis possimus, adipisci, maiores
+              dolore necessitatibus hic magnam corporis. Eum. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Fugit minus quis possimus
+              odio tenetur aperiam fuga doloribus, voluptatum suscipit? Minima
+              dolore deleniti reiciendis ipsum hic ipsam quisquam laborum, ipsa
+              esse.
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- End of main content -->
+      <!-- Purple section -->
+
+      <section class="pourquoi_revendre_section">
+        <h2 class="text-center pb-3">Pourquoi revendre sur hexamobile ?</h2>
+        <div class="d-flex justify-content-around">
+          <div class="pourquoi_revendre_part1">
+            <ul class="list-unstyled class">
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white" class="me-3"
+                  >Meilleurs prix de rachat du marché</span
+                >
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white">Paiement rapide en 48h maximum</span>
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white"
+                  >Notre local de reconditionnement se trouve en France</span
+                >
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white"
+                  >Service client toujours disponible</span
+                >
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white">Envoi gratuit et sécurisé</span>
+              </li>
+              <li class="mb-3">
+                <img
+                  src="public/assets/flectiation.png"
+                  width="40"
+                  class="me-3"
+                /><span class="text-white"
+                  >Tous les produits sont repris, même case</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="pourquoi_revendre_part2">
+            <div class="d-flex align-content-center justify-content-center">
+              <img src="public/assets/chamb.png" width="50" class="pb-3" />
+            </div>
+
+            <p class="text-black text-center p-0">
+              Déjà plus qu'un
+              <span class="text-white text-uppercase">million</span>nous font
+              confiance!
+            </p>
+            <p class="text-center text-white p-0">
+              Vous voulez en faire partie mais vous avez des questions ?
+            </p>
+            <div class="d-flex align-content-center justify-content-center">
+              <button class="text-uppercase btn button4">
+                Consulter notre faq
+              </button>
             </div>
           </div>
-          </div>
-          <!-- left side toufa hne -->
+        </div>
+      </section>
+      <!-- End of purple section -->
 
-          <!-- right side tabda hne -->
-          <div id="right" class="p-4 pt-0 col-4 pr-0 mb-8">
-            <div id="cash" class="py-4 panier">
-              <h6 class="fw-medium ms-4 mb-4 fs-6">Recapitulatif</h6>
-              <div class="d-flex justify-content-between mx-4 mb-2">
-                <div class="flex-4 d-flex">
-                  <img src="./public/assets/airpod.jpg" height="30" alt="">
-                  <p class="fw-medium ms-2" style="color:#3C66AC;margin-top:5%;">article 1</p>
-                </div>
-                <div class="flex-4">
-                  
-                </div>
-                <div class="flex-4 fw-medium"> 149.99 £</div>
-  
-              </div>
-              <div class="d-flex justify-content-between mx-4 mb-2">
-                <div class="flex-4 d-flex"> 
-                  <div class="w-40"><img src="./public/assets/iphone.png" height="30" alt=""></div>
-                  <p class="fw-medium ms-2" style="color:#3C66AC;margin-top:5%;">article 2</p>
-                </div>
-                <div class="flex-4">
-                  
-                </div>
-                <div class="flex-4 fw-medium"> 149.99 £</div>
-  
-              </div>
-              
-              <div class="d-flex justify-content-between mx-4">
-                <div class="flex-8">
-                  <p class="fw-medium" style="color:#3C66AC;">Frais de Livraison</p>
-                </div>
-                <div class="flex-4 fw-medium"> Gratuit</div>
-  
-              </div>
-              <div class="d-flex justify-content-between px-4" style="background-color:#3C66AC;">
-                <div class="flex-8 ">
-                  <p class="fw-medium total">Total panier</p>
-                </div>
-                <div class="flex-4">
-                  <p class="fw-medium total"> 149.99 £</p>
-                </div>
-  
-              </div>
-             
-              
-              <div class="w-100 px-4 mx-auto my-4">
-  
-                <button class="bouton-commander mx-auto">COMMANDER</button>
-  
-              </div>
-            </div>
-          </div>
-        </main>
-      </div>
-
-      <div
-        id="footer"
-        class="d-flex align-items-center pt-5 bg-white"
-        style="transform: translateZ(-42px)"
-      >
+      <!-- nos services -->
+      <div class="d-flex align-items-center pt-5 bg-white">
         <div class="container-fluid">
           <div class="row mb-5">
             <div class="col-3">
@@ -899,8 +972,10 @@
           </div>
         </div>
       </div>
+      <!-- End of nos services -->
 
-      <div class="footer" style="transform: translateZ(-42px)">
+      <!-- Footer -->
+      <div class="footer">
         <div class="container-fluid col-10">
           <div class="row div-1 d-flex align-items-center">
             <div class="col-lg-5 mt-1 col-md-12">
@@ -978,51 +1053,40 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
+      <!-- End of footer -->
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="public/script4.js"></script>
     <script>
-    /*  var span = $("#cash"),
-        div = $("#right"),
-        win = $(window),
-        footer = $("#footer"),
-        divHeight = div.height();
-      $(document).scroll(compute).scroll();
-      $(window).resize(compute).resize();
+      let toggles = document.getElementsByClassName("accordion_btn");
+let contentDiv = document.getElementsByClassName("accordion_content");
+let icons = document.getElementsByClassName("toogle_icon");
 
-      function compute() {
-        var spanHeight = span.outerHeight(),
-          spanOffset = span.offset().top + spanHeight,
-          footeroffset = footer.offset().top + footer.outerHeight(),
-          divOffset = div.offset().top + divHeight;
-        console.log("footer offset", footeroffset);
-        if (
-          spanHeight <=
-          $(window).scrollTop() + $(window).height() - spanHeight
-        ) {
-          span.addClass("bottom");
-        }
-        var windowScroll = win.scrollTop() + win.height() - 50;
+for (let i = 0; i < toggles.length; i++) {
+  toggles[i].addEventListener("click", () => {
+    if (parseInt(contentDiv[i].style.height) != contentDiv[i].scrollHeight) {
+      contentDiv[i].style.height = contentDiv[i].scrollHeight + "px";
+      toggles[i].style.color = "#4B97B3";
+      icons[i].classList.remove("fa-angle-dow");
+      icons[i].classList.add("fa-angle-up");
+    } else {
+      contentDiv[i].style.height = "0px";
+      toggles[i].style.color = "#3F73AD";
+      icons[i].classList.remove("fa-angle-up");
+      icons[i].classList.add("fa-angle-dow");
+    }
 
-        if (
-          spanHeight >
-          $(window).scrollTop() + $(window).height() - spanHeight
-        ) {
-          span.removeClass("bottom");
-        }
-
-        console.log(
-          "spanOffset=" + spanHeight,
-          "windowScroll=" +
-            ($(window).scrollTop() + $(window).height() + spanHeight)
-        );
-      } */
+    for (let j = 0; j < contentDiv.length; j++) {
+      if (j !== i) {
+        contentDiv[j].style.height = "0px";
+        toggles[j].style.color = "#3F73AD";
+        icons[j].classList.remove("fa-angle-dow");
+        icons[j].classList.add("fa-angle-up");
+      }
+    }
+  });
+}
     </script>
   </body>
 </html>

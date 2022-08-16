@@ -5,7 +5,7 @@ header {
     font-size: 15px;
     margin: 0;
     padding: 1px;
-    overflow-x: hidden;
+    width: 100%;
     /* background-color: green !important; */
     height: 100%;
 }
@@ -84,10 +84,10 @@ header {
 }
 
 .navbar-button {
-    background-color: #4B97B3;
+    background-color: #3c66ac;
     color: rgba(79, 161, 182, 1);
     padding: 12px 22px;
-    border: 1px solid rgb(27, 96, 223);
+    border: 1px solid #3c66ac;
     border-radius: 25px;
     display: block;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.11);

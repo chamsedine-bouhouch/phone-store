@@ -16,7 +16,7 @@ body {
 
 /* Style the list */
 ul.breadcrumb {
-    padding: 10px 16px 10px 7rem;
+    padding: 10px 16px 10px 3rem;
     list-style: none;
     background-color: #f5f6f8;
     margin-bottom: 0;
@@ -44,7 +44,7 @@ ul.breadcrumb {
   /* Display list items side by side */
   ul.breadcrumb li {
     display: inline;
-    font-size: 18px;
+    font-size: 12px;
   }
   
   /* Add a slash symbol (/) before/behind each list item */
@@ -61,7 +61,7 @@ ul.breadcrumb {
   }
   .left-side{
     flex: 5;
-    padding-right: 2rem;
+    padding-right: 1rem;
 
   }
   .content-page-info{
