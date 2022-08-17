@@ -215,20 +215,33 @@
         padding: 1% 2%;
         border-radius: 30px;
         color: #4b97b3;
-        font-size: 12px;
+        font-size: 14px;
       }
       .revendre_form::placeholder {
         color: #4b97b3;
-        font-weight: bold;
+        font-size: 12px;
+        font-weight: 600;
       }
-      .revendre_form_btn {
+      select.revendre_form{
+        font-size: 12px;
+      }
+      .revendre_form_btn2{
+        border: 1px solid #4b97b3;
         padding: 1% 2%;
         border-radius: 30px;
+        color: #4b97b3;
+        font-size: 14px;
+        background-color: transparent;
+      }
+      .revendre_form_btn {
+        padding: 0px 10px;
+      
         color: white;
-        border-radius: 30px;
+        border-radius: 100px;
         background-color: rgba(79, 161, 182, 1);
         border: 1px solid rgba(79, 161, 182, 1);
-        font-weight: bold;
+        font-weight: medium;
+        font-size: 14px;
       }
     </style>
   </head>
@@ -500,8 +513,8 @@
         <div
           class="top_intoduction_part1 d-flex align-items-center justify-content-evenly mb-3"
         >
-          <button class="btn button4">Acceuil</button>
-          <button class="btn button5">Comment ca marche ?</button>
+          <button class="btn button5">Revendre</button>
+          <button class="btn button4">Comment ca marche ?</button>
           <button class="btn button4">FAQ</button>
         </div>
         <div class="top_intoduction_part2">
@@ -544,7 +557,7 @@
           <div class="loading_bar">
             <div
               class="icon-end d-flex justify-content-center"
-              style="gap: 80px"
+              style="gap: 60px"
             >
               <div>
                 <img src="./public/assets/flectiation.png" height="30" alt="" />
@@ -836,8 +849,8 @@
                 style="
                   color: rgba(79, 161, 182, 1);
                   font-weight: 500;
-                  font-size: 12px;
-                  padding-left: 1%;
+                  font-size: 10px;
+                  
                 "
               >
                 Je ne dispose pas de ces Informations actuellement. Je les
@@ -947,21 +960,23 @@
                 style="gap: 30px"
               >
                 <input
-                  type="date"
+                  type="text"
                   placeholder="Date de naissance"
+                  onfocus="(this.type='date')"
+                  onblur="if(this.value==''){this.type='text'}"
                   class="w-100 revendre_form"
                 />
                 <select
                   placeholder="Votre civilité"
                   class="w-100 revendre_form"
                 >
-                  <option>XX</option>
+                <option value="" disabled selected>Votre civilité</option>
                 </select>
                 <select
-                  placeholder="Votre nationalité"
+                 
                   class="w-100 revendre_form"
                 >
-                  <option>XX</option>
+                <option value="" disabled selected  >Votre nationalité</option>
                 </select>
               </div>
               <div class="d-flex w-100 pb-4" style="gap: 30px">
@@ -983,22 +998,26 @@
               </div>
               <div class="d-flex w-100 pb-4" style="gap: 30px">
                 <select placeholder="pays" class="w-100 revendre_form">
-                  <option>XX</option>
+                  <option disabled selected>Pays</option>
                 </select>
                 <input
                   type="text"
                   placeholder="Numéro de téléphone"
                   class="w-100 revendre_form"
                 />
-                <input
-                  type="text"
-                  placeholder="Parcour"
-                  class="w-100 revendre_form"
-                />
+                
+                <button
+                  class="w-100 revendre_form_btn2 position-relative"
+                >Parcour 
+                <p class="position-absolute" style="bottom:-2rem ; font-size:10px;color:black;right:10%"
+                >copie de carte d'identité recto verso</p></button>
+                
+              
               </div>
+             
             </form>
-            <div class="d-flex pt-5" style="gap: 140px">
-              <p class="flex-2" style="flex: 2">
+            <div class="d-flex pt-5" style="gap: 16px">
+              <p class="col-8" style="font-size:10px ;">
                 En cliquant sur le bouton FINALISER MA COMMANDE, j’accepte de
                 céder mon appareil conformément aux Conditions générales de
                 reprise et certifie que ces informations sont exactes et je
@@ -1007,8 +1026,8 @@
                 faire ?
               </p>
               <button
-                class="btn flex-2 revendre_form_btn w-100"
-                style="flex: 1"
+                class="col-4 revendre_form_btn"
+                
               >
                 Finaliser ma commande
               </button>
