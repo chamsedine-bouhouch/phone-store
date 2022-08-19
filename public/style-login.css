@@ -288,7 +288,7 @@ input[type="radio"]:hover {
 .color-5 {
     background: rgba(155, 86, 185, 1);
 }
-
+/* 
 .card-tag {
     display: flex;
     justify-content: space-between;
@@ -305,7 +305,7 @@ input[type="radio"]:hover {
     padding: 8px;
     -webkit-clip-path: polygon(0 30%, 90% 0%, 100% 100%, 0% 100%);
     clip-path: polygon(0 30%, 90% 0%, 100% 100%, 0% 100%);
-}
+} */
 
 .phones-verification {
     background: linear-gradient(140deg, #543da9, #dc83af);
