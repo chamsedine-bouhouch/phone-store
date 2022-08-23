@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    src: url(https://example.com/material-symbols.woff) format('woff');
+  }
 body {
     font-family: 'Krona One', sans-serif;
 
@@ -254,12 +260,12 @@ margin-right: 0.5rem;
 }
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
-    right: -2%;
+    right: 0%;
 }
 .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
   
-    left: -2%;
+    left: 0%;
 }
 .owl-carousel .owl-nav button.owl-prev .fa,
 .owl-carousel .owl-nav button.owl-next .fa {
@@ -604,8 +610,8 @@ input[type="radio"]:hover {
     width: auto;
     height: auto;
     background-image: url(./assets/bg-phones.PNG);
-    background-size: contain;
-    background-position: center;
+    background-size: 55%;
+    background-position:top;
     background-repeat: no-repeat;
 }
 .phone-details .btn {
@@ -619,10 +625,11 @@ input[type="radio"]:hover {
     background-color: rgb(40, 82, 94);
 }
 .phone-image img {
-    width: 15rem;
+       height: 30rem; 
+     width: auto;
 }
 .phone-details-btns {
-    margin-top: 50px;
+    margin-top: 2rem;
     margin-bottom: -80px;
 }
 .phone-details-btn {
@@ -791,10 +798,12 @@ font-size: medium;
 }
 .page-sub-container {
     margin-top: 100px;
-    background-color: #00a7bc;
+    background-image: url("./assets/Groupe\ 171.png");
+    background-position: center;
+    background-size: cover;
 }
 .w-bg-pic {
-    width: 100%;
+    height: 100%;
 }
 .footer {
     background: linear-gradient(45deg, #3a62ab, #4a93b3);
