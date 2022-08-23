@@ -241,6 +241,8 @@ margin-right: 0.5rem;
 }
 .card-stars{
     margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 .card-stars span{
     color: rgba(0, 0, 0, 0.397);
