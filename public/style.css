@@ -36,7 +36,57 @@ ul.breadcrumb {
     margin-bottom: 0;
   }
 
+ /* panier */
+ .step-image{
+    width: 100px;
+    height: 110px;
+ }
+ .btn-stepper-nav{
+    background-color: transparent;
+    border: none;
+ }
+ .image-step1{
+    background-image:url('./assets/1-complet.png');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+ }
+ .image-step2{
+    background-image:url('./assets/etape2.png');
+    background-position: center;
+    background-size: 115%;
+    background-repeat: no-repeat;
+ }
  
+ .image-step3{
+    background-image:url('./assets/etape3.png');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+ }
+ .image-step4{
+    background-image:url('./assets/etape4.png');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+ }
+ .image-step5{
+    background-image:url('./assets/1-complet.png');
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+ }
+ .ligne-separante{
+    width: 100px;
+    height: 20px;
+    background-image:url('./assets/ligne.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .step2-finish{
+    background-image:url('./assets/1-complet.png');
+ }
 .button-side{
     cursor: pointer;
     text-decoration: none;
@@ -62,7 +112,11 @@ ul.breadcrumb {
     display: inline;
     font-size: 12px;
   }
+  .margin-left-home-page{
+    margin-left: 8.33333333%;
+  }
   
+
   /* Add a slash symbol (/) before/behind each list item */
   ul.breadcrumb li+li:before {
     padding: 8px;
@@ -85,6 +139,7 @@ ul.breadcrumb {
     padding-right: 6rem;
     padding-top: 80px;
     padding-bottom: 4rem;
+    position: relative;
   }
   .element{
     padding: 10px 0px 10px 2rem;
@@ -262,12 +317,12 @@ margin-right: 0.5rem;
 }
 .owl-carousel .owl-nav button.owl-next {
     position: absolute;
-    right: 0%;
+    right: -2%;
 }
 .owl-carousel .owl-nav button.owl-prev {
     position: absolute;
   
-    left: 0%;
+    left: -2%;
 }
 .owl-carousel .owl-nav button.owl-prev .fa,
 .owl-carousel .owl-nav button.owl-next .fa {
